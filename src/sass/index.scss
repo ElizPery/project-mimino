@@ -1,1 +1,10 @@
 @import './base/reset';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './base/base';
+@import './base/typography';
+
+@import './components/buttons';
+@import './layout/header';
+@import './layout/navigation';
+@import './pages/home';
