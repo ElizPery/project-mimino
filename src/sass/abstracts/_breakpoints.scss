@@ -10,7 +10,7 @@
     }
 }
 
-@mixin for-tablet-landscale-up {
+@mixin for-tablet-landscape-up {
     @media (min-width: 1024px) {
         @content;
     }
