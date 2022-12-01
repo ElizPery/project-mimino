@@ -5,8 +5,10 @@
     padding-left: 0;
 }
 
-@mixin img-space-no {
-    display: flex;
+@mixin img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 @mixin visually-hidden {
