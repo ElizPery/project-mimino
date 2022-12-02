@@ -23,3 +23,16 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+@mixin label {
+    font-family: "FilmP3";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    font-display: swap;
+    src: 
+        local("FilmP3"),
+        url("../fonts/film-p3-bold.woff2") format("woff2"),
+        url("../fonts/film-p3-bold.woff") format("woff");
+  
+}

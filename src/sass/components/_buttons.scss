@@ -1,0 +1,19 @@
+.hotel__button{
+width: 236px;
+height: 48px;
+
+background-color: $primaryBlack;
+
+border: 2px solid $primaryWhite;
+border-radius: 25px;
+}
+
+.hotel__link {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accentColor;
+  text-decoration: none;
+}
