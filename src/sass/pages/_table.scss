@@ -1,12 +1,20 @@
 .restaurant {
   padding: 32px 0px;
+  @include for-tablet-landscape-up {
+    background: $bgrColorDarkLemon;
+  }
 }
 .restaurant-caption {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  color: $primaryBlack;
   margin-bottom: 32px;
-}
-table {
-  margin-bottom: 16px;
-  border-collapse: collapse;
+  @include for-tablet-landscape-up {
+    margin-bottom: 40px;
+  }
 }
 
 td {
@@ -14,11 +22,35 @@ td {
   margin: 0;
 }
 
+.restaurant-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .menu {
   font-size: 14px;
   letter-spacing: 0.02em;
+  max-width: 384px;
   width: 100%;
   color: $primaryBlack;
+  border-collapse: collapse;
+  @include for-tablet-landscape-up {
+    max-width: 430px;
+  }
+  @include for-desktop-up {
+    max-width: 485px;
+  }
 }
 
 .menu-caption {
@@ -27,14 +59,29 @@ td {
   font-size: 32px;
   line-height: 37px;
   text-align: left;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+  @include for-tablet-landscape-up {
+    margin-bottom: 20px;
+  }
 }
+
 .menu__name-food {
   width: 60%;
   font-weight: 500;
   line-height: 17px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
+.drink,
+.dessert {
+  padding-bottom: 11px;
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+}
+.dropping {
+  padding: 0;
+}
+
 .menu__weight-food {
   width: 20%;
   font-weight: 300;
@@ -46,6 +93,7 @@ td {
 }
 
 .menu__price-food {
+  width: 20%;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -55,12 +103,22 @@ td {
   font-size: 10px;
   line-height: 12px;
   padding-bottom: 8px;
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+  &.dropping {
+    padding: 0;
+  }
 }
 
 .button-menu {
+  display: block;
+  margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
+
   padding: 10px 28px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -72,4 +130,8 @@ td {
 
   border: 2px solid #fffdee;
   border-radius: 25px;
+  @include for-tablet-landscape-up {
+    margin-top: 31px;
+    margin-right: 0;
+  }
 }
