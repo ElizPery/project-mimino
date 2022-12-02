@@ -1,5 +1,6 @@
 .restaurant {
   padding: 32px 0px;
+  background: $bgrColorLemon;
   @include for-tablet-landscape-up {
     background: $bgrColorDarkLemon;
   }
@@ -116,22 +117,22 @@ td {
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px 24px 14px;
 
-  padding: 10px 28px;
-
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  line-height: 20px;
+
   cursor: pointer;
   color: $accentColor;
   background: $primaryBlack;
 
-  border: 2px solid #fffdee;
+  border: 2px solid $bgrColorLemon;
   border-radius: 25px;
+
   @include for-tablet-landscape-up {
     margin-top: 31px;
     margin-right: 0;
+    border: 2px solid $bgrColorDarkLemon;
   }
 }
