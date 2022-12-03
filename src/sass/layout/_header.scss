@@ -1,12 +1,15 @@
 .header {
-    
-
-    &__container {
+     &__container {
         margin-top: 16px;
         @include for-tablet-landscape-up {
         margin-top: 24px; 
         }
-                
+        
+        @include for-desktop-up {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }       
     }
 
     &__nav {
@@ -70,7 +73,7 @@
         }
     }
    
-&__phone {
+    &__phone {
      
      
     font-weight: 400;
@@ -88,7 +91,7 @@
     // color: $primaryWhite;
 
     text-decoration: none;
-}
+    }
 
 
     &__logo {
@@ -99,6 +102,10 @@
         letter-spacing: 0.3em;
 
         // color: $primaryWhite;
+
+        @include for-desktop-up {
+            margin-right: 96px;
+        }       
          
           
        
@@ -116,10 +123,21 @@
 
 
 .social {
-&__menu {
-    @media (max-width: 1280px) {
-        display: none;
+    &__icon {
+        fill: rgba(243, 198, 83, 0.7);
+        
     }
-}
+
+    &__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     
+   @media (max-width: 1280px) {
+        display: none;
+        }
+    }
 }
 
