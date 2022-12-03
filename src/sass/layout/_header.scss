@@ -1,6 +1,8 @@
 .header {
+    
+
     &__container {
-        
+
     }
 
     &__nav {
@@ -13,9 +15,22 @@
         align-items: center;
     }
     &__item {
+        display: flex;
+        align-items: center;
+       
         list-style: none;
         
     }
+
+    &__item--framed  {
+
+        @include for-tablet-landscape-up {
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px; 
+        }
+        
+    }
+
 
     &__link {
         font-weight: 500;
@@ -32,6 +47,7 @@
 
     &__icon {
         fill: $accentColor;
+        margin: 8px;
             
     }
 
@@ -42,8 +58,21 @@
     }
    
 &__phone {
-
+     
+     
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+     
     
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    
+     
+    
+    // color: $primaryWhite;
+
     text-decoration: none;
 }
 
