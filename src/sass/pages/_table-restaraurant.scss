@@ -1,0 +1,119 @@
+td {
+  padding: 0;
+  margin: 0;
+}
+
+.restaurant {
+  padding: 32px 0px;
+  background: $bgrColorLemon;
+  @include for-tablet-landscape-up {
+    background: $bgrColorDarkLemon;
+  }
+}
+.restaurant-caption {
+  margin-bottom: 32px;
+  font-family: 'Times New Roman';
+
+  font-size: 32px;
+  line-height: 1.16;
+  color: $primaryBlack;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: 40px;
+  }
+}
+
+.restaurant-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  max-width: 384px;
+  width: 100%;
+
+  font-size: 14px;
+  letter-spacing: 0.02em;
+
+  color: $primaryBlack;
+  border-collapse: collapse;
+
+  @include for-tablet-landscape-up {
+    max-width: 430px;
+  }
+
+  @include for-desktop-up {
+    max-width: 485px;
+  }
+}
+
+.menu-caption {
+  margin-bottom: 16px;
+
+  font-family: 'TimesNewRoman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  text-align: left;
+  @include for-tablet-landscape-up {
+    margin-bottom: 20px;
+  }
+}
+
+.menu__name-food {
+  width: 60%;
+  font-weight: 500;
+  line-height: 1.21;
+  padding-bottom: 4px;
+}
+.drink,
+.dessert {
+  padding-bottom: 11px;
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+}
+.dropping {
+  padding: 0;
+}
+
+.menu__weight-food {
+  width: 20%;
+  font-weight: 300;
+
+  line-height: 1.21;
+}
+
+.menu__price-food {
+  width: 20%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.menu__composition-food {
+  padding-bottom: 8px;
+
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+  &.dropping {
+    padding: 0;
+  }
+}
