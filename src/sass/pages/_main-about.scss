@@ -16,7 +16,6 @@
 
 .about-restaurant__subtitle {
   margin-bottom: 12px;
-
   font-family: 'FilmP3';
   font-weight: 700;
   font-size: 40px;
@@ -45,15 +44,24 @@
 }
 
 .about-restaurant__block {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  display: block;
   margin-bottom: 32px;
+
+  @include for-tablet-portrait-up {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
-.about-restaurant__secondary_image {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+.about-restaurant__secondary-image {
+  @include img;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  @include for-phone-only {
+    margin-bottom: 20px;
+  }
 }
 .about-restaurant__description {
   font-weight: 600;
@@ -64,6 +72,7 @@
 }
 .swiper {
   position: relative;
+  display: none;
 }
 .swiper-wrapper {
   display: flex;
@@ -75,8 +84,6 @@
 }
 .swiper__image {
   margin-bottom: 72px;
-
-  
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
