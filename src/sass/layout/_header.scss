@@ -1,0 +1,67 @@
+.header {
+    &__container {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__item {
+        list-style: none;
+        
+    }
+
+    &__link {
+        
+        
+        @include for-phone-only {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        }
+               
+        text-decoration: none;
+
+        color: #F3C653;
+
+
+
+    }
+
+    &__logo {
+        font-family: "Film P3";
+        text-decoration: none;
+        font-size: 36px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        
+        
+        @include for-phone-only {
+        
+        }
+        
+
+       
+    }
+    &__phone {
+        @include for-phone-only {
+            display: none;
+        }
+    }
+   
+}
+
+
+
+.social {
+&__menu {
+    @include for-phone-only {
+        display: none;
+    }
+}
+}
+
