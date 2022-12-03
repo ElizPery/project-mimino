@@ -1,10 +1,12 @@
 .header {
     &__container {
-        display: flex;
+        
     }
 
     &__nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__menu {
         display: flex;
@@ -26,7 +28,7 @@
                
         text-decoration: none;
 
-        color: #F3C653;
+        color: $accentColor;
 
 
 
