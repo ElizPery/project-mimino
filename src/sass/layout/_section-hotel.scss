@@ -1,7 +1,30 @@
-.hotel-room1{ 
+.hotel__room--lemon{ 
  
-  padding: 30px 0;
+  @include for-tablet-landscape-up{
+    position: relative;
+  }
   background-color:$bgrColorLemon;
+
+  @include for-phone-only{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  };
+  @include for-tablet-portrait-up{
+    padding-top: 66px;
+  }
+ 
+}
+.hotel__room--darklemon{
+
+  background-color: $bgrColorDarkLemon;
+
+  @include for-phone-only{
+    padding-top:30px;
+    padding-bottom: 30px;
+  };
+  @include for-tablet-portrait-up{
+    padding-top: 66px;
+  }
 }
 .hotel__label{
 @include label;
@@ -9,17 +32,17 @@
   margin-bottom: 32px;
 }
 .hotel__title{
-  font-family: "TimesNewRoman";
-  font-size: 20px;
-  line-height: 1.15;
+  font-family: 'Times New Roman';
+  font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src:
-      local("TimesNewRoman"),
-      url("../fonts/times-new-roman-normal.woff2") format("woff2"),
-      url("../fonts/times-new-roman-normal.woff") format("woff");
+  font-size:20px;
+  line-height: 1.15;
       
   color: $thirdTextColor;
+  @include for-tablet-portrait-up{
+    font-size: 32px;
+    line-height: 1.15;
+  }
 }
 .hotel__name{
   font-family: 'Times New Roman';
@@ -29,25 +52,88 @@
   line-height: 1.16;
   letter-spacing: 0.05em;
   margin-bottom: 12px;
+    @include for-tablet-portrait-up{
+      font-size: 30px;
+      line-height: 1.13;
+    }
 
   color: $primaryBlack;
   }
 .hotel__about{
   font-family: 'Montserrat';
   width: 258px;
-  
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
 
+    @include for-tablet-portrait-up{
+      font-size: 16px;
+      line-height: 1.25;
+      width:439px;
+   }
   color: $primaryTextColor;
 }
-.hotel__img{
-  display: flex;
-  justify-content: flex-end;
+.hotel__about-lemon{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $primaryTextColor;
+
+  margin-bottom: 32px;
+  width: 242px;
+  margin-right:58px; 
+  @include for-tablet-portrait-up{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.53;
+    width: 400px;
+  }
 }
+.hotel__colum-box{
+
+}
+.hotel__img--small {
+@include drop-shadow;
+display: block;
+ max-width: 100%;
+margin-left: auto;
+margin-bottom: 32px;
+@include for-tablet-landscape-up {
+  position: absolute;
+  top:-32px;
+  right:112px;
+  margin-bottom: 48px;
+ }
+}
+.hotel__img--big{
+  @include drop-shadow;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 32px;
+  }
 .hotel__button-box:not(:last-child){
 padding-bottom: 16px;
+}
+
+
+.hotel__info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slader__box{
+  display: flex;
+  flex-direction: column;
+}
+.slader__list{
+  display: flex;
+  gap: 16px;
+  margin-left: -120px;
 }

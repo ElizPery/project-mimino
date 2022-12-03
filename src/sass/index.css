@@ -87,6 +87,28 @@ ul {
   text-decoration: none;
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+}
+.icon:not(:last-child) {
+  margin-right: 33px;
+}
+
+.hotell__arrows-lemon {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+
+.hotell__arrows-darklemon {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  justify-content: flex-start;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -108,9 +130,39 @@ ul {
   }
 }
 
-.hotel-room1 {
-  padding: 30px 0;
+.hotel__room--lemon {
   background-color: #FFFDEE;
+}
+@media (min-width: 1024px) {
+  .hotel__room--lemon {
+    position: relative;
+  }
+}
+@media (max-width: 413px) {
+  .hotel__room--lemon {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 414px) {
+  .hotel__room--lemon {
+    padding-top: 66px;
+  }
+}
+
+.hotel__room--darklemon {
+  background-color: #F0ECD6;
+}
+@media (max-width: 413px) {
+  .hotel__room--darklemon {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 414px) {
+  .hotel__room--darklemon {
+    padding-top: 66px;
+  }
 }
 
 .hotel__label {
@@ -119,20 +171,29 @@ ul {
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
-  font-display: swap;
-  src: local("FilmP3"), url("../fonts/film-p3-bold.woff2") format("woff2"), url("../fonts/film-p3-bold.woff") format("woff");
   margin-top: 8px;
   margin-bottom: 32px;
 }
+@media (min-width: 414px) {
+  .hotel__label {
+    font-size: 64px;
+    line-height: 1.07;
+  }
+}
 
 .hotel__title {
-  font-family: "TimesNewRoman";
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  font-weight: 400;
-  font-display: swap;
-  src: local("TimesNewRoman"), url("../fonts/times-new-roman-normal.woff2") format("woff2"), url("../fonts/times-new-roman-normal.woff") format("woff");
   color: #B4B4B4;
+}
+@media (min-width: 414px) {
+  .hotel__title {
+    font-size: 32px;
+    line-height: 1.15;
+  }
 }
 
 .hotel__name {
@@ -143,6 +204,12 @@ ul {
   letter-spacing: 0.05em;
   margin-bottom: 12px;
   color: #000000;
+}
+@media (min-width: 414px) {
+  .hotel__name {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .hotel__about {
@@ -155,12 +222,77 @@ ul {
   margin-bottom: 32px;
   color: #5F5F5F;
 }
+@media (min-width: 414px) {
+  .hotel__about {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 439px;
+  }
+}
 
-.hotel__img {
+.hotel__about-lemon {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5F5F5F;
+  margin-bottom: 32px;
+  width: 242px;
+  margin-right: 58px;
+}
+@media (min-width: 414px) {
+  .hotel__about-lemon {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.53;
+    width: 400px;
+  }
+}
+
+.hotel__img--small {
   display: flex;
-  justify-content: flex-end;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+@media (min-width: 1024px) {
+  .hotel__img--small {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    margin-bottom: 48px;
+  }
+}
+
+.hotel__img--big {
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 32px;
 }
 
 .hotel__button-box:not(:last-child) {
   padding-bottom: 16px;
+}
+
+.hotel__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slader__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.slader__list {
+  display: flex;
+  gap: 16px;
+  margin-left: -120px;
 }/*# sourceMappingURL=index.css.map */
