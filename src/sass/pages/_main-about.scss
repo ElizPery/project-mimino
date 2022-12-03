@@ -3,7 +3,31 @@
 }
 
 .about-restaurant {
-  padding-top: 16px;
+
+// background-image: linear-gradient(to right,
+//         #0E0C07 50%,
+//         rgba(122, 122, 122, 0.4) 50%,
+//         rgba(122, 122, 122, 0.4) 50.078%,
+//         #0E0C07 50.078%,
+//         #0E0C07 73.594%,
+//         rgba(122, 122, 122, 0.4)73.594%,
+//         rgba(122, 122, 122, 0.4) 73.672%,
+//         #0E0C07 73.672%);
+
+
+  padding: 16px 0 72px 0;
+
+  @include for-tablet-landscape-up {
+    padding: 120px 32px 96px 32px;
+  }
+
+  @include for-desktop-up {
+    padding: 120px 70px 118px 70px;
+  }
+}
+
+.about-restaurant__container {
+  position: relative;
 }
 
 .about-restaurant__slogan {
@@ -12,6 +36,11 @@
   font-size: 20px;
   line-height: 1.15;
   color: #b4b4b4;
+
+  @include for-tablet-landscape-up {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
 }
 
 .about-restaurant__subtitle {
@@ -22,6 +51,15 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #494848;
+
+  @include for-tablet-landscape-up {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+
+  @include for-desktop-up {
+    color: #828282;
+  }
 }
 
 .about-restaurant__text {
@@ -33,6 +71,11 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #5f5f5f;
+
+   @include for-tablet-landscape-up {
+    font-size: 16px;
+    margin-bottom: 162px;
+  }
 }
 
 .about-restaurant__primary-image {
@@ -41,6 +84,12 @@
   margin-bottom: 32px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  @include for-tablet-landscape-up {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 }
 
 .about-restaurant__block {
@@ -72,7 +121,7 @@
 }
 .swiper {
   position: relative;
-  display: none;
+  // display: none;
 }
 .swiper-wrapper {
   display: flex;
@@ -81,9 +130,10 @@
   overflow: hidden;
 }
 .swiper-slide {
+  flex-shrink: 0;
 }
 .swiper__image {
-  margin-bottom: 72px;
+  @include img;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
