@@ -28,15 +28,25 @@
 
         margin-right: 6px;
 
-@include for-phone-only {
-       
-        }
-
     }
 
     &__icon {
         fill: $accentColor;
+            
     }
+
+    @media (max-width: 1024px) {
+        &__icon:first-child {
+        margin-right: 20px;
+        }
+    }
+   
+&__phone {
+
+    
+    text-decoration: none;
+}
+
 
     &__logo {
         font-family: "Film P3";
@@ -44,15 +54,13 @@
         font-size: 36px;
         line-height: 1.08;
         letter-spacing: 0.3em;
-        
-        
-        @include for-phone-only {
-        
-        }
-        
 
+        // color: $primaryWhite;
+         
+          
        
     }
+
     &__phone {
         @media (max-width: 1024px) {
             display: none;
