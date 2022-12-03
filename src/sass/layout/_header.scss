@@ -2,7 +2,11 @@
     
 
     &__container {
-
+        margin-top: 16px;
+        @include for-tablet-landscape-up {
+        margin-top: 24px; 
+        }
+                
     }
 
     &__nav {
@@ -69,6 +73,7 @@
     align-items: center;
     letter-spacing: 0.02em;
     
+    margin-right: 8px;
      
     
     // color: $primaryWhite;
@@ -92,6 +97,7 @@
 
     &__phone {
         @media (max-width: 1024px) {
+            padding-right: 8px;
             display: none;
         }
     }
