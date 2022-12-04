@@ -9,6 +9,28 @@
     background-image: url(../images/homepage/hero-main-mobile.jpg);
     background-repeat: no-repeat;
 
+    &__location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 179px;
+        height: 30px;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+    
+    &__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        
+        color: #E5E5E5;
+        text-decoration: none;
+    }
+
 
     &__title {
         font-family: "FilmP3";
@@ -58,4 +80,23 @@
 
     padding: 15px 24px 13px;
 
+}
+
+.social {
+    &__icon {
+        fill: rgba(243, 198, 83, 0.7);
+
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
+    }
 }
