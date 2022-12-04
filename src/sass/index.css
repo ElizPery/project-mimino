@@ -68,6 +68,32 @@ ul {
   font-display: swap;
   src: local("Times New Roman"), url("../fonts/times-new-roman-bold.woff2") format("woff2"), url("../fonts/times-new-roman-bold.woff") format("woff");
 }
+.form-btn {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  background: #000000;
+  border: 1px solid #F3C653;
+  border-radius: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 250ms linear, color 250ms linear;
+}
+.form-btn:hover, .form-btn:focus {
+  background-color: #F3C653;
+  color: #000000;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
