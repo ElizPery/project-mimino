@@ -4,15 +4,18 @@ td {
 }
 
 .restaurant {
+  position: relative;
   padding: 32px 0px;
   background: $bgrColorLemon;
   @include for-tablet-landscape-up {
     background: $bgrColorDarkLemon;
   }
 }
+
 .restaurant-caption {
   margin-bottom: 32px;
   font-family: 'Times New Roman';
+  text-transform: uppercase;
 
   font-size: 32px;
   line-height: 1.16;
@@ -45,7 +48,7 @@ td {
   max-width: 384px;
   width: 100%;
 
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.02em;
 
   color: $primaryBlack;
@@ -65,19 +68,28 @@ td {
 
   font-family: 'TimesNewRoman';
   font-weight: 700;
-  font-size: 32px;
-  line-height: 1.16;
+  font-size: 20px;
+  line-height: 1.15;
   text-align: left;
   @include for-tablet-landscape-up {
     margin-bottom: 20px;
+  }
+  @include for-desktop-up {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 
 .menu__name-food {
   width: 60%;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.21;
   padding-bottom: 4px;
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 .drink,
 .dessert {
@@ -93,6 +105,7 @@ td {
 .menu__weight-food {
   width: 20%;
   font-weight: 300;
+  font-size: 14px;
 
   line-height: 1.21;
 }
@@ -100,8 +113,11 @@ td {
 .menu__price-food {
   width: 20%;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.21;
+  font-size: 14px;
+  @include for-desktop-up {
+    font-size: 16px;
+  }
 }
 
 .menu__composition-food {
