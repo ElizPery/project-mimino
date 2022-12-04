@@ -1,35 +1,45 @@
-.hotel__room--lemon{ 
- 
+.hotel__room-lemon{ 
+   @include for-tablet-landscape-up{
+    position: relative;
+  }
+  @include for-phone-only{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @include for-tablet-portrait-up{
+    padding-top: 66px;
+    padding-bottom: 40px;
+  }
+  @include for-desktop-up{
+    padding-top: 72px;
+    padding-bottom: 50px;
+  }
+  background-color:$bgrColorLemon;
+}
+.hotel__room-darklemon{
   @include for-tablet-landscape-up{
     position: relative;
   }
-  background-color:$bgrColorLemon;
-
-  @include for-phone-only{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  };
-  @include for-tablet-portrait-up{
-    padding-top: 66px;
-  }
- 
-}
-.hotel__room--darklemon{
-
   background-color: $bgrColorDarkLemon;
 
   @include for-phone-only{
-    padding-top:30px;
-    padding-bottom: 30px;
-  };
+    padding-top:32px;
+    padding-bottom: 32px;
+  }
   @include for-tablet-portrait-up{
     padding-top: 66px;
+    padding-bottom: 40px
   }
 }
 .hotel__label{
 @include label;
-  margin-top: 8px;
   margin-bottom: 32px;
+  @include for-tablet-landscape-up{
+    margin-bottom: 62px;
+  }
+  @include for-desktop-up{
+    margin-bottom: 72px;
+  }
 }
 .hotel__title{
   font-family: 'Times New Roman';
@@ -37,26 +47,35 @@
   font-weight: 400;
   font-size:20px;
   line-height: 1.15;
-      
-  color: $thirdTextColor;
-  @include for-tablet-portrait-up{
+  @include for-phone-only{
+    margin-bottom: 8px;
+  }
+   @include for-tablet-portrait-up{
     font-size: 32px;
     line-height: 1.15;
+    margin-bottom: 0px;
   }
+    @include for-desktop-up{
+      margin-bottom: 4px;
+    }
+  color: $thirdTextColor;
 }
 .hotel__name{
   font-family: 'Times New Roman';
-  
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+
   margin-bottom: 12px;
-    @include for-tablet-portrait-up{
+    @include for-tablet-landscape-up{
       font-size: 30px;
       line-height: 1.13;
+      margin-bottom: 16px;
     }
-
+    @include for-desktop-up{
+      margin-bottom: 24px;
+    }
   color: $primaryBlack;
   }
 .hotel__about{
@@ -66,74 +85,150 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  margin-bottom: 32px; 
 
-    @include for-tablet-portrait-up{
+  color:$primaryTextColor;
+
+    @include for-tablet-landscape-up{
       font-size: 16px;
       line-height: 1.25;
       width:439px;
+      margin-bottom: 176px;
    }
-  color: $primaryTextColor;
+   @include for-desktop-up{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    width:439px;
+    margin-bottom: 188px;
+   }
 }
 .hotel__about-lemon{
   font-family: 'Montserrat';
+  width: 258px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  margin-bottom: 32px; 
 
-  color: $primaryTextColor;
+  color:$secondaryTextColor;
 
-  margin-bottom: 32px;
-  width: 242px;
-  margin-right:58px; 
-  @include for-tablet-portrait-up{
+    @include for-tablet-landscape-up{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+      width:400px;
+      margin-bottom: 176px;
+   }
+   @include for-desktop-up{
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.53;
-    width: 400px;
-  }
-}
-.hotel__colum-box{
-
+    line-height: 1.25;
+    width:439px;
+    margin-bottom: 188px;
+   }
 }
 .hotel__img--small {
-@include drop-shadow;
-display: block;
- max-width: 100%;
-margin-left: auto;
-margin-bottom: 32px;
-@include for-tablet-landscape-up {
-  position: absolute;
-  top:-32px;
-  right:112px;
-  margin-bottom: 48px;
- }
+  @include drop-shadow;
+  @include img;
+  margin-left: auto;
+  margin-bottom: 32px;
+    @include for-tablet-landscape-up {
+      position: absolute;
+      top:-32px;
+      right:112px;
+    }
+    @include for-desktop-up{
+      position: absolute;
+      top:-32px;
+      right:180px;
+  } 
 }
 .hotel__img--big{
   @include drop-shadow;
+  @include img;
   margin-right: auto;
-  display: block;
-  max-width: 100%;
   margin-bottom: 32px;
+  @include for-tablet-landscape-up {
+    position: absolute;
+    top:-32px;
+    left:112px;
+    }
+  @include for-desktop-up{
+    position: absolute;
+    top:-32px;
+    left:180px;  
   }
+}
 .hotel__button-box:not(:last-child){
 padding-bottom: 16px;
 }
-
-
 .hotel__info{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
 .slader__box{
   display: flex;
   flex-direction: column;
 }
-.slader__list{
-  display: flex;
+.slader__list-right{
+  display:flex;
   gap: 16px;
-  margin-left: -120px;
+ margin-left: -120px;
+ @include for-tablet-landscape-up{
+  margin: initial;
+  gap: 40px;}
+}
+.slader__list-left{
+  display:flex;
+  gap: 16px;
+  @include for-tablet-landscape-up{
+   gap: 40px;
+ }
+}
+.swiper__slide {
+  @include drop-shadow;
+  margin-bottom: 12px;
+  width: 245px;
+ @include for-tablet-portrait-up {
+    width: 245px;
+    margin-bottom: 20px;
+  }
+ @include for-tablet-landscape-up {
+    width: 194px;
+  }
+ @include for-desktop-up {
+    width: 254px;
+  }
+}
+.set__container{
+  @include for-tablet-landscape-up {
+    width: 428px;
+  }
+  @include for-desktop-up{
+    width: 550px;
+  }
+}
+.swiper__position{
+  display: flex;
+  flex-direction: column;
+}
+.set__images-lemon{
+  @include for-desktop-up{
+    @include between;
+  }
+  @include for-tablet-landscape-up{
+    @include between;
+  }
+}  
+.set__images-darklemon{
+  @include for-desktop-up{
+    @include between;
+  }
+  @include for-tablet-landscape-up{
+    @include between;
+    flex-direction:row-reverse;
+  }
 }

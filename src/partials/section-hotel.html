@@ -1,47 +1,91 @@
 <section>
-    <div class="container">
-      <div class="hotel__room--lemon">
-        <span class="hotel__title"> Amet minim mollit non</span>
-        <h1 class="hotel__label">mimino</h1>
-            <h2 class="hotel__name">ДВОМІСНИЙ НОМЕР люкс</h2>
-            <p class="hotel__about">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <img class="hotel__img--small"
-                  srcset="
-                    ../src/images/hotel/room-mobile.jpg     246w,
-                    ../src/images/hotel/room-mobile@2x.jpg  488w,
-                    ../src/images/hotel/room-tablet.jpg     400w,
-                    ../src/images/hotel/room-tablet@2x.jpg  800w,
-                    ../src/images/hotel/room-desktop.jpg    460w,
-                    ../src/images/hotel/room-desktop@2x.jpg 920w
-                  "
-                sizes="(min-width: 1200px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
-                alt="Інтер'єр ресторану, вигляд до вікна"
-              />
-        <div class="hotel__arrows-darklemon">
-          <svg class="icon">
-            <use href="../src/images/sprite.svg#icon-arrow-left"></use>
-          </svg>
-          <svg class="icon">
-            <use href="../src/images/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </div>
-        <ul>
-          <li class="hotel__button-box">
-            <button class="hotel__button" type="button">
-              <a class="hotel__link" href="#">Детальніше</a>
-            </button>
-          </li>
-          <li> 
-            <button class="hotel__button" type="button">
-              <a class="hotel__link" href="#">Переглянути ціни</a>
-            </button>
-          </li>
-        </ul>
+  <div class="hotel__room-lemon"> 
+      <div class="container">
+            <span class="hotel__title"> Amet minim mollit non</span>
+              <h1 class="hotel__label">mimino</h1>
+              <h2 class="hotel__name">ДВОМІСНИЙ НОМЕР</h2>
+              <p class="hotel__about">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <img class="hotel__img hotel__img--small"
+                      srcset="
+                        ../src/images/hotel/room-mobile.jpg     246w,
+                        ../src/images/hotel/room-mobile@2x.jpg  488w,
+                        ../src/images/hotel/room-tablet.jpg     400w,
+                        ../src/images/hotel/room-tablet@2x.jpg  800w,
+                        ../src/images/hotel/room-desktop.jpg    460w,
+                        ../src/images/hotel/room-desktop@2x.jpg 920w
+                      "
+                      sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
+                    alt="Кімната з апартаментами"
+                  />
+            <div class="set__images-lemon">
+              <div class="set__container">
+                <div class="swiper">
+                  <div class="swiper-wrapper swiper__slider">
+                    <div class="swiper-slide swiper__slide">
+                        <img class="swiper__slide"
+                        srcset="
+                          ../src/images/hotel/slider/room_slider1-mobile.jpg     195w,
+                          ../src/images/hotel/slider/room_slider1-mobile@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider1-tablet.jpg     195w,
+                          ../src/images/hotel/slider/room_slider1-tablet@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider1-desktop.jpg    255w,
+                          ../src/images/hotel/slider/room_slider1-desktop@2x.jpg 388w
+                        "
+                        src="../src/images/hotel/slider/room_slider1-mobile.jpg"
+                        sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                        alt="Стіл з раковиною"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper__slide">
+                          <img class="swiper__slide"
+                          srcset="
+                          ../src/images/hotel/slider/room_slider2-mobile.jpg     195w,
+                          ../src/images/hotel/slider/room_slider2-mobile@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider2-tablet.jpg     195w,
+                          ../src/images/hotel/slider/room_slider2-tablet@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider2-desktop.jpg    255w,
+                          ../src/images/hotel/slider/room_slider2-desktop@2x.jpg 388w
+                        "
+                        src="../src/images/hotel/slider/room_slider2-mobile.jpg"
+                        sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                        alt="Чашка кави, навпроти вікна"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__button-lemon">
+                  <div class="swiper-button-next">
+                    <svg width="32px" height="32px">
+                      <use href="../src/images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                  </div>  
+                  <div class="swiper-button-prev">
+                    <svg width="32px" height="32px">
+                      <use href="../src/images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </div> 
+                </div>
+              </div>
+              <div class="button__section-hotel">
+                <ul class="hotel__list-button">
+                  <li class="hotel__button-box">
+                    <button class="hotel__button" type="button">
+                      <a class="hotel__link" href="#">Детальніше</a>
+                    </button>
+                  </li>
+                  <li> 
+                    <button class="hotel__button" type="button">
+                      <a class="hotel__link" href="#">Переглянути ціни</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
   <section>
-    <div class="hotel__room--darklemon">
+    <div class="hotel__room-darklemon">
        <div class="container ">
             <div class="hotel__info">
               <span class="hotel__title"> Amet minim mollit non</span>
@@ -60,93 +104,60 @@
                   ../src/images/hotel/room-desktop.jpg    460w,
                   ../src/images/hotel/room-desktop@2x.jpg 920w
                 "
-                sizes="(min-width: 1200px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
-                alt="Інтер'єр ресторану, вигляд до вікна"
+                sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
+                alt="Кімната з апартаментами"
               />
-          <div class="hotel__arrows-lemon">
-            <svg class="icon">
-              <use href="../src/images/sprite.svg#icon-arrow-left"></use>
-            </svg>
-            <svg class="icon">
-              <use href="../src/images/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </div>
-          <ul>
-            <li class="hotel__button-box">
-              <button class="hotel__button" type="button">
-                <a class="hotel__link" href="#">Детальніше</a>
-              </button>
-            </li>
-            <li> 
-              <button class="hotel__button" type="button">
-                <a class="hotel__link" href="#">Переглянути ціни</a>
-              </button>
-            </li>
-          </ul>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="hotel__room--lemon"> 
-        <div class="container">
-              <span class="hotel__title"> Amet minim mollit non</span>
-                <h1 class="hotel__label">mimino</h1>
-                <h2 class="hotel__name">ДВОМІСНИЙ НОМЕР</h2>
-                <p class="hotel__about">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <img class="hotel__img--small"
+            <div class="set__images-darklemon">
+              <div class="set__container">
+                <div class="swiper">
+                  <div class="swiper-wrapper swiper__slider">
+                    <div class="swiper-slide swiper__slide">
+                        <img class="swiper__slide"
                         srcset="
-                          ../src/images/hotel/room-mobile.jpg     246w,
-                          ../src/images/hotel/room-mobile@2x.jpg  488w,
-                          ../src/images/hotel/room-tablet.jpg     400w,
-                          ../src/images/hotel/room-tablet@2x.jpg  800w,
-                          ../src/images/hotel/room-desktop.jpg    460w,
-                          ../src/images/hotel/room-desktop@2x.jpg 920w
+                          ../src/images/hotel/slider/room_slider1-mobile.jpg     195w,
+                          ../src/images/hotel/slider/room_slider1-mobile@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider1-tablet.jpg     195w,
+                          ../src/images/hotel/slider/room_slider1-tablet@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider1-desktop.jpg    255w,
+                          ../src/images/hotel/slider/room_slider1-desktop@2x.jpg 388w
                         "
-                        sizes="(min-width: 1200px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
-                      alt=""
-                    />
-              <div class="slader__box">
-                  <ul class="slader__list">
-                    <li>
-                      <img
+                        src="../src/images/hotel/slider/room_slider1-mobile.jpg"
+                        sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                        alt="Стіл з раковиною"
+                      />
+                    </div>
+                    <div class="swiper-slide swiper__slide">
+                          <img class="swiper__slide"
                           srcset="
-                            ../src/images/hotel/slider/room_slider1-mobile.jpg     195w,
-                            ../src/images/hotel/slider/room_slider1-mobile@2x.jpg  388w,
-                            ../src/images/hotel/slider/room_slider1-tablet.jpg     195w,
-                            ../src/images/hotel/slider/room_slider1-tablet@2x.jpg  388w,
-                            ../src/images/hotel/slider/room_slider1-desktop.jpg    255w,
-                            ../src/images/hotel/slider/room_slider1-desktop@2x.jpg 388w
-                          "
-                          src="../src/images/hotel/slider/room_slider1-mobile.jpg"
-                          sizes="(min-width: 1200px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
-                          alt="Інтер'єр ресторану, вигляд до вікна"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            srcset="
-                            ../src/images/hotel/slider/room_slider2-mobile.jpg     195w,
-                            ../src/images/hotel/slider/room_slider2-mobile@2x.jpg  388w,
-                            ../src/images/hotel/slider/room_slider2-tablet.jpg     195w,
-                            ../src/images/hotel/slider/room_slider2-tablet@2x.jpg  388w,
-                            ../src/images/hotel/slider/room_slider2-desktop.jpg    255w,
-                            ../src/images/hotel/slider/room_slider2-desktop@2x.jpg 388w
-                          "
-                          src="../src/images/hotel/slider/room_slider2-mobile.jpg"
-                          sizes="(min-width: 1200px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
-                          alt="Інтер'єр ресторану, вигляд до вікна"
-                        />
-                    </li>
-                  </ul>
-                  <div class="hotel__arrows-darklemon">
-                    <svg class="icon">
+                          ../src/images/hotel/slider/room_slider2-mobile.jpg     195w,
+                          ../src/images/hotel/slider/room_slider2-mobile@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider2-tablet.jpg     195w,
+                          ../src/images/hotel/slider/room_slider2-tablet@2x.jpg  388w,
+                          ../src/images/hotel/slider/room_slider2-desktop.jpg    255w,
+                          ../src/images/hotel/slider/room_slider2-desktop@2x.jpg 388w
+                        "
+                        src="../src/images/hotel/slider/room_slider2-mobile.jpg"
+                        sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                        alt="Чашка кави, навпроти вікна"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__button-darklemon">
+                  <div class="swiper-button-next">
+                    <svg width="32px" height="32px">
                       <use href="../src/images/sprite.svg#icon-arrow-left"></use>
                     </svg>
-                    <svg class="icon">
+                  </div>  
+                  <div class="swiper-button-prev">
+                    <svg width="32px" height="32px">
                       <use href="../src/images/sprite.svg#icon-arrow-right"></use>
                     </svg>
-                  </div>
-                <ul>
+                  </div> 
+                </div>
+              </div>
+              <div class="button__section-hotel">
+                <ul class="hotel__list-button">
                   <li class="hotel__button-box">
                     <button class="hotel__button" type="button">
                       <a class="hotel__link" href="#">Детальніше</a>
@@ -158,6 +169,93 @@
                     </button>
                   </li>
                 </ul>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="hotel__room-lemon"> 
+        <div class="container">
+              <span class="hotel__title"> Amet minim mollit non</span>
+                <h1 class="hotel__label">mimino</h1>
+                <h2 class="hotel__name">ДВОМІСНИЙ НОМЕР</h2>
+                <p class="hotel__about">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <img class="hotel__img hotel__img--small"
+                        srcset="
+                          ../src/images/hotel/room-mobile.jpg     246w,
+                          ../src/images/hotel/room-mobile@2x.jpg  488w,
+                          ../src/images/hotel/room-tablet.jpg     400w,
+                          ../src/images/hotel/room-tablet@2x.jpg  800w,
+                          ../src/images/hotel/room-desktop.jpg    460w,
+                          ../src/images/hotel/room-desktop@2x.jpg 920w
+                        "
+                        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 246px, 60vw"
+                      alt="Кімната з апартаментами"
+                    />
+              <div class="set__images-lemon">
+                <div class="set__container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper swiper__slider">
+                      <div class="swiper-slide swiper__slide">
+                          <img class="swiper__slide"
+                          srcset="
+                            ../src/images/hotel/slider/room_slider1-mobile.jpg     195w,
+                            ../src/images/hotel/slider/room_slider1-mobile@2x.jpg  388w,
+                            ../src/images/hotel/slider/room_slider1-tablet.jpg     195w,
+                            ../src/images/hotel/slider/room_slider1-tablet@2x.jpg  388w,
+                            ../src/images/hotel/slider/room_slider1-desktop.jpg    255w,
+                            ../src/images/hotel/slider/room_slider1-desktop@2x.jpg 388w
+                          "
+                          src="../src/images/hotel/slider/room_slider1-mobile.jpg"
+                          sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                          alt="Стіл з раковиною"
+                        />
+                      </div>
+                      <div class="swiper-slide swiper__slide">
+                            <img class="swiper__slide"
+                            srcset="
+                            ../src/images/hotel/slider/room_slider2-mobile.jpg     195w,
+                            ../src/images/hotel/slider/room_slider2-mobile@2x.jpg  388w,
+                            ../src/images/hotel/slider/room_slider2-tablet.jpg     195w,
+                            ../src/images/hotel/slider/room_slider2-tablet@2x.jpg  388w,
+                            ../src/images/hotel/slider/room_slider2-desktop.jpg    255w,
+                            ../src/images/hotel/slider/room_slider2-desktop@2x.jpg 388w
+                          "
+                          src="../src/images/hotel/slider/room_slider2-mobile.jpg"
+                          sizes="(min-width: 1280px) 255px, (min-width: 1024px) 195px, (min-width: 414px) 195px, 47vw"
+                          alt="Чашка кави, навпроти вікна"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper__button-lemon">
+                    <div class="swiper-button-next">
+                      <svg width="32px" height="32px">
+                        <use href="../src/images/sprite.svg#icon-arrow-left"></use>
+                      </svg>
+                    </div>  
+                    <div class="swiper-button-prev">
+                      <svg width="32px" height="32px">
+                        <use href="../src/images/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </div> 
+                  </div>
+                </div>
+                <div class="button__section-hotel">
+                  <ul class="hotel__list-button">
+                    <li class="hotel__button-box">
+                      <button class="hotel__button" type="button">
+                        <a class="hotel__link" href="#">Детальніше</a>
+                      </button>
+                    </li>
+                    <li> 
+                      <button class="hotel__button" type="button">
+                        <a class="hotel__link" href="#">Переглянути ціни</a>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
         </div>
     </div>
