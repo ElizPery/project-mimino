@@ -5,9 +5,12 @@
 @import './base/base';
 @import './base/typography';
 
+@import '../../node_modules/swiper/swiper.scss';
+
 @import './components/buttons';
 @import './layout/container';
 @import './layout/header';
+@import'./layout/mainpage-restaurant';
 @import './layout/navigation';
 @import './pages/home';
 @import './layout/table-restaraurant';
