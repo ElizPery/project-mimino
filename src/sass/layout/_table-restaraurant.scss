@@ -1,0 +1,157 @@
+td {
+  padding: 0;
+  margin: 0;
+}
+
+.restaurant {
+  padding: 32px 0px;
+
+  @include for-tablet-landscape-up {
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background: $bgrColorDarkLemon;
+  }
+
+  @include for-desktop-up {
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+      to right,
+      $bgrColorDarkLemon 26.4%,
+      rgba(186, 186, 186, 0.4) 26.6%,
+
+      $bgrColorDarkLemon 26.6%,
+
+      $bgrColorDarkLemon 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+
+      $bgrColorDarkLemon 50.2%,
+
+      $bgrColorDarkLemon 73.74%,
+      rgba(186, 186, 186, 0.4) 73.94%,
+
+      $bgrColorDarkLemon 73.94%
+    );
+  }
+}
+
+.restaurant-caption {
+  margin-bottom: 32px;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+
+  font-size: 32px;
+  line-height: 1.16;
+  color: $primaryBlack;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: 40px;
+  }
+}
+
+.restaurant-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  max-width: 384px;
+  width: 100%;
+
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  color: $primaryBlack;
+  border-collapse: collapse;
+
+  @include for-tablet-landscape-up {
+    max-width: 430px;
+  }
+
+  @include for-desktop-up {
+    max-width: 485px;
+  }
+}
+
+.menu-caption {
+  margin-bottom: 16px;
+
+  font-family: 'TimesNewRoman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: left;
+  @include for-tablet-landscape-up {
+    margin-bottom: 20px;
+  }
+  @include for-desktop-up {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+.menu__name-food {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  padding-bottom: 4px;
+  @include for-desktop-up {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.drink,
+.dessert {
+  padding-bottom: 11px;
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+}
+.dropping {
+  padding: 0;
+}
+
+.menu__weight-food {
+  width: 20%;
+  font-weight: 300;
+  font-size: 14px;
+
+  line-height: 1.21;
+}
+
+.menu__price-food {
+  width: 20%;
+  font-weight: 700;
+  line-height: 1.21;
+  font-size: 14px;
+  @include for-desktop-up {
+    font-size: 16px;
+  }
+}
+
+.menu__composition-food {
+  padding-bottom: 8px;
+
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include for-desktop-up {
+    padding-bottom: 12px;
+  }
+  &.dropping {
+    padding: 0;
+  }
+}

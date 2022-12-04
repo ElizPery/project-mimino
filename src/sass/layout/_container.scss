@@ -1,17 +1,17 @@
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 
-    @include for-tablet-portrait-up {
-        width: 414px;
-    }
+  @include for-tablet-portrait-up {
+    width: 414px;
+  }
 
-    @include for-tablet-landscape-up {
-        width: 957px;
-    }
+  @include for-tablet-landscape-up {
+    width: 957px;
+  }
 
-    @include for-desktop-up {
-        width: 1140px;
-    }
+  @include for-desktop-up {
+    width: 1140px;
+  }
 }
