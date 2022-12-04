@@ -1,6 +1,6 @@
 .hero {
     max-width: 1600px;
-    height: auto;
+    min-height: 740px;
     background-color: $colorFooter;
     text-align: center;
     background-size: cover;
@@ -12,9 +12,50 @@
 
     &__title {
         font-family: "FilmP3";
+        font-size: 96px;
+        line-height: 1.073;
+        letter-spacing: 0.3em;
+        
+        color: $primaryWhite;
     }
 
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        
+        color: $primaryWhite;
+    }
 
+    &__item {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.156;
+        letter-spacing: 0.05em;
+        
+        color: $primaryWhite;
+    }
 
+    
+
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid $primaryWhite;
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $accentColor;
+
+    padding: 15px 24px 13px;
 
 }
