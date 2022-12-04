@@ -1,0 +1,20 @@
+.hero {
+    max-width: 1600px;
+    height: auto;
+    background-color: $colorFooter;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: url(../images/homepage/hero-main-mobile.jpg);
+    background-repeat: no-repeat;
+
+
+    &__title {
+        font-family: "FilmP3";
+    }
+
+
+
+
+}
