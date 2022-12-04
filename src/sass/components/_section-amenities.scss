@@ -11,18 +11,18 @@
  @include for-desktop-up{
         padding: 48px 0px;
         background: linear-gradient(to right, 
-        #FFFDEE 26.9%, 
-        rgba(186, 186, 186, 0.4)0%,
+        #FFFDEE 26.65%, 
+        rgba(186, 186, 186, 0.4)26.8%,
         
-        #FFFDEE 27.05%,
+        #FFFDEE 26.8%,
         #FFFDEE 50%,
         rgba(186, 186, 186, 0.4)50%,
        
         #FFFDEE 50.15%,
-        #FFFDEE 72.9%,
-        rgba(186, 186, 186, 0.4)72.9%,
+        #FFFDEE 73.5%,
+        rgba(186, 186, 186, 0.4)73.65%,
        
-        #FFFDEE 73.05%);
+        #FFFDEE 73.65%);
         background-size: 100% 1280px;
     }
 }
@@ -48,11 +48,10 @@ margin-bottom: 16px;
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.25;
+    font-weight: 700;
     color: $secondaryTextColor;
 @include for-tablet-landscape-up{
     line-height: 1.21;
-    font-weight: 700;
-   
     width: 400px;
 
 }
@@ -70,9 +69,7 @@ margin-bottom: 16px;
         line-height: 1.15;
  
     }
-        //   @include for-desktop-up{
-        //        margin-left: 70px;
-        //    }
+
 }
 .amenities__box-second{
    @include for-phone-only{
