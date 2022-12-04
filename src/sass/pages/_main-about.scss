@@ -2,32 +2,64 @@
   @include visually-hidden;
 }
 
-.about-restaurant {
-  // background-image: linear-gradient(to right,
-  //         $colorFooter 50%,
-  //         rgba(122, 122, 122, 0.4) 50%,
-  //         rgba(122, 122, 122, 0.4) 50.078%,
-  //         $colorFooter 50.078%,
-  //         $colorFooter 73.594%,
-  //         rgba(122, 122, 122, 0.4)73.594%,
-  //         rgba(122, 122, 122, 0.4) 73.672%,
-  //         $colorFooter 73.672%);
+.about-restaurant__container {
+  position: relative;
 
   padding-top: 16px;
-  padding-bottom: 72px;
+  padding-bottom: 20px;
+
+  background-image: linear-gradient(
+    to right,
+    $bgrColorLemon 33.81%,
+    rgba(186, 186, 186, 0.4) 33.81%,
+    rgba(186, 186, 186, 0.4) 34.06%,
+    $bgrColorLemon 34.06%,
+    $bgrColorLemon 65.94%,
+    rgba(186, 186, 186, 0.4) 65.94%,
+    rgba(186, 186, 186, 0.4) 66.18%,
+    $bgrColorLemon 66.18%
+  );
 
   @include for-tablet-landscape-up {
     padding-top: 120px;
-    padding-bottom: 96px;
+    padding-bottom: 262px;
+
+    background-image: linear-gradient(
+      to right,
+      $bgrColorLemon 25.57%,
+      rgba(186, 186, 186, 0.4) 25.57%,
+      rgba(186, 186, 186, 0.4) 25.67%,
+      $bgrColorLemon 25.67%,
+      $bgrColorLemon 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.1%,
+      $bgrColorLemon 50.1%,
+      $bgrColorLemon 74.32%,
+      rgba(186, 186, 186, 0.4) 74.32%,
+      rgba(186, 186, 186, 0.4) 74.42%,
+      $bgrColorLemon 74.42%
+    );
   }
 
   @include for-desktop-up {
-    padding-bottom: 118px;
-  }
-}
+    padding-bottom: 225px;
 
-.about-restaurant__container {
-  position: relative;
+    background-image: linear-gradient(
+      to right,
+      $bgrColorLemon 23.51%,
+      rgba(186, 186, 186, 0.4) 23.51%,
+      rgba(186, 186, 186, 0.4) 23.59%,
+      $bgrColorLemon 23.59%,
+      $bgrColorLemon 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.09%,
+      $bgrColorLemon 50.09%,
+      $bgrColorLemon 76.4%,
+      rgba(186, 186, 186, 0.4) 76.4%,
+      rgba(186, 186, 186, 0.4) 76.49%,
+      $bgrColorLemon 76.49%
+    );
+  }
 }
 
 .about-restaurant__slogan {
@@ -74,12 +106,13 @@
 
   @include for-tablet-landscape-up {
     font-size: 16px;
-    margin-bottom: 162px;
+    margin-bottom: 142px;
     max-width: 440px;
   }
 
   @include for-desktop-up {
     max-width: 518px;
+    margin-bottom: 162px;
   }
 }
 
@@ -92,8 +125,9 @@
 
   @include for-tablet-landscape-up {
     position: absolute;
-    top: -132px;
+    top: -32px;
     right: 80px;
+    margin-bottom: 0;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
@@ -103,8 +137,10 @@
 }
 
 .about-restaurant__block {
-  display: block;
+  display: flex;
+  gap: 20px;
   margin-bottom: 32px;
+  align-items: center;
 
   @include for-tablet-portrait-up {
     display: flex;
@@ -114,6 +150,7 @@
 
   @include for-tablet-landscape-up {
     gap: 48px;
+    margin-bottom: 0;
   }
 
   @include for-desktop-up {
@@ -126,15 +163,12 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
-  @include for-phone-only {
-    margin-bottom: 20px;
-  }
-
   @include for-tablet-landscape-up {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 .about-restaurant__description {
+  transform: translateY(-9px);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -144,6 +178,11 @@
 
   @include for-tablet-landscape-up {
     font-size: 16px;
+    transform: translateY(7px);
+  }
+
+  @include for-desktop-up {
+    transform: translateY(-40px);
   }
 }
 
@@ -151,7 +190,17 @@
   margin-left: 70px;
 
   @include for-tablet-landscape-up {
+    position: absolute;
+    right: 28px;
+    bottom: 32px;
+    width: 428px;
     margin-left: 0;
+  }
+
+  @include for-desktop-up {
+    right: 15;
+    bottom: 50px;
+    width: 548px;
   }
 
   .swiper__slider {
@@ -165,26 +214,13 @@
       margin-bottom: 36px;
     }
   }
-  //
-  //   position: absolute;
-  //   right: 15px;
-  //   bottom: 0;
-  //   max-width: 428px;
-
-  // }
 }
 
-// .swiper-wrapper {
-//   display: flex;
-//   gap: 20px;
-//   margin-left: 70px;
-//   overflow: hidden;
-
-//   @include for-tablet-landscape-up {
-//     gap: 40px;
-//   }
-// }
 .swiper-slide {
+  @include for-phone-only {
+    max-width: 245px;
+  }
+
   @include for-tablet-portrait-up {
     width: 245px;
   }
@@ -197,9 +233,10 @@
     width: 254px;
   }
 }
+
 .swiper__image {
   @include img;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
@@ -207,22 +244,23 @@
   display: flex;
   flex-direction: row-reverse;
   gap: 32px;
+  padding-right: 2px;
 }
 
-.swiper__button-prev {
-  //   position: absolute;
-  //   right: 64px;
-  //   bottom: -68px;
-}
+.swiper__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: $primaryBlack;
 
-.swiper__button-next {
-  // position: absolute;
-  // right: 0px;
-  // bottom: -68px;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .swiper__icon {
-  fill: $primaryBlack;
+  fill: currentColor;
 }
 
 .test {
