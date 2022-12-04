@@ -83,6 +83,27 @@ td {
   @include for-desktop-up {
     max-width: 485px;
   }
+
+  &__name-food {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    padding-bottom: 4px;
+  
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__weight-food {
+    width: 20%;
+    font-weight: 300;
+    font-size: 14px;
+  
+    line-height: 1.21;
+  }
 }
 
 .menu-caption {
@@ -100,19 +121,34 @@ td {
     font-size: 24px;
     line-height: 1.16;
   }
-}
 
-.menu__name-food {
-  width: 60%;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.21;
-  padding-bottom: 4px;
-  @include for-desktop-up {
-    font-size: 16px;
-    line-height: 1.25;
+  &__price-food {
+    width: 20%;
+    font-weight: 700;
+    line-height: 1.21;
+    font-size: 14px;
+  
+    @include for-desktop-up {
+      font-size: 16px;
+    }
+  }
+
+  &__composition-food {
+    padding-bottom: 8px;
+  
+    font-size: 10px;
+    line-height: 1.2;
+  
+    @include for-desktop-up {
+      padding-bottom: 12px;
+    }
+  
+    &.dropping {
+      padding: 0;
+    }
   }
 }
+
 .drink,
 .dessert {
   padding-bottom: 11px;
@@ -122,36 +158,4 @@ td {
 }
 .dropping {
   padding: 0;
-}
-
-.menu__weight-food {
-  width: 20%;
-  font-weight: 300;
-  font-size: 14px;
-
-  line-height: 1.21;
-}
-
-.menu__price-food {
-  width: 20%;
-  font-weight: 700;
-  line-height: 1.21;
-  font-size: 14px;
-  @include for-desktop-up {
-    font-size: 16px;
-  }
-}
-
-.menu__composition-food {
-  padding-bottom: 8px;
-
-  font-size: 10px;
-  line-height: 1.2;
-
-  @include for-desktop-up {
-    padding-bottom: 12px;
-  }
-  &.dropping {
-    padding: 0;
-  }
 }
