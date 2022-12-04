@@ -1,3 +1,4 @@
+<div class="test"></div>
 <section class="about-restaurant">
   <div class="container about-restaurant__container">
     <h2 class="about-restaurant__title">About our restaurant</h2>
@@ -18,7 +19,7 @@
         ./images/homepage/interior1-desktop@2x.jpg 920w
       "
       src="./images/homepage/interior1-desktop.jpg"
-      sizes="(min-width: 1200px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 244px, 100vw"
+      sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, (min-width: 414px) 244px, 100vw"
       alt="Інтер'єр ресторану, вигляд до виходу"
       class="about-restaurant__primary-image"
     />
@@ -33,7 +34,7 @@
           ./images/homepage/interior2-desktop@2x.jpg 920w
         "
         src="./images/homepage/interior2-desktop.jpg"
-        sizes="(min-width: 1200px) 460px, (min-width: 1024px) 350px, (min-width: 414px) 200px, 100vw"
+        sizes="(min-width: 1280px) 460px, (min-width: 1024px) 350px, (min-width: 414px) 200px, 100vw"
         alt="Інтер'єр ресторану, вигляд до вікна"
         class="about-restaurant__secondary-image"
       />
@@ -43,85 +44,89 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img
-            srcset="
-              ./images/homepage/restaurant_slider/restaurant_slider1-mobile.jpg     245w,
-              ./images/homepage/restaurant_slider/restaurant_slider1-mobile@2x.jpg  490w,
-              ./images/homepage/restaurant_slider/restaurant_slider1-tablet.jpg     194w,
-              ./images/homepage/restaurant_slider/restaurant_slider1-tablet@2x.jpg  388w,
-              ./images/homepage/restaurant_slider/restaurant_slider1-desktop.jpg    254w,
-              ./images/homepage/restaurant_slider/restaurant_slider1-desktop@2x.jpg 508w
-            "
-            src="./images/homepage/restaurant_slider/restaurant_slider1-desktop.jpg"
-            sizes="(min-width: 1200px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
-            alt="Бокал вина в руці"
-            class="swiper__image"
-          />
+    <div class="about-restaurant__swiper">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper swiper__slider">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/homepage/restaurant_slider/restaurant_slider1-mobile.jpg     245w,
+                ./images/homepage/restaurant_slider/restaurant_slider1-mobile@2x.jpg  490w,
+                ./images/homepage/restaurant_slider/restaurant_slider1-tablet.jpg     194w,
+                ./images/homepage/restaurant_slider/restaurant_slider1-tablet@2x.jpg  388w,
+                ./images/homepage/restaurant_slider/restaurant_slider1-desktop.jpg    254w,
+                ./images/homepage/restaurant_slider/restaurant_slider1-desktop@2x.jpg 508w
+              "
+              src="./images/homepage/restaurant_slider/restaurant_slider1-desktop.jpg"
+              sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
+              alt="Бокал вина в руці"
+              class="swiper__image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/homepage/restaurant_slider/restaurant_slider2-mobile.jpg     245w,
+                ./images/homepage/restaurant_slider/restaurant_slider2-mobile@2x.jpg  490w,
+                ./images/homepage/restaurant_slider/restaurant_slider2-tablet.jpg     194w,
+                ./images/homepage/restaurant_slider/restaurant_slider2-tablet@2x.jpg  388w,
+                ./images/homepage/restaurant_slider/restaurant_slider2-desktop.jpg    254w,
+                ./images/homepage/restaurant_slider/restaurant_slider2-desktop@2x.jpg 508w
+              "
+              src="./images/homepage/restaurant_slider/restaurant_slider2-desktop.jpg"
+              sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
+              alt="Сервірований стіл"
+              class="swiper__image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/homepage/restaurant_slider/restaurant_slider3-mobile.jpg     245w,
+                ./images/homepage/restaurant_slider/restaurant_slider3-mobile@2x.jpg  490w,
+                ./images/homepage/restaurant_slider/restaurant_slider3-tablet.jpg     194w,
+                ./images/homepage/restaurant_slider/restaurant_slider3-tablet@2x.jpg  388w,
+                ./images/homepage/restaurant_slider/restaurant_slider3-desktop.jpg    254w,
+                ./images/homepage/restaurant_slider/restaurant_slider3-desktop@2x.jpg 508w
+              "
+              src="./images/homepage/restaurant_slider/restaurant_slider3-desktop.jpg"
+              sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
+              alt="Готове замовлення"
+              class="swiper__image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              srcset="
+                ./images/homepage/restaurant_slider/restaurant_slider4-mobile.jpg     245w,
+                ./images/homepage/restaurant_slider/restaurant_slider4-mobile@2x.jpg  490w,
+                ./images/homepage/restaurant_slider/restaurant_slider4-tablet.jpg     194w,
+                ./images/homepage/restaurant_slider/restaurant_slider4-tablet@2x.jpg  388w,
+                ./images/homepage/restaurant_slider/restaurant_slider4-desktop.jpg    254w,
+                ./images/homepage/restaurant_slider/restaurant_slider4-desktop@2x.jpg 508w
+              "
+              src="./images/homepage/restaurant_slider/restaurant_slider4-desktop.jpg"
+              sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
+              alt="Десерт"
+              class="swiper__image"
+            />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            srcset="
-              ./images/homepage/restaurant_slider/restaurant_slider2-mobile.jpg     245w,
-              ./images/homepage/restaurant_slider/restaurant_slider2-mobile@2x.jpg  490w,
-              ./images/homepage/restaurant_slider/restaurant_slider2-tablet.jpg     194w,
-              ./images/homepage/restaurant_slider/restaurant_slider2-tablet@2x.jpg  388w,
-              ./images/homepage/restaurant_slider/restaurant_slider2-desktop.jpg    254w,
-              ./images/homepage/restaurant_slider/restaurant_slider2-desktop@2x.jpg 508w
-            "
-            src="./images/homepage/restaurant_slider/restaurant_slider2-desktop.jpg"
-            sizes="(min-width: 1200px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
-            alt="Сервірований стіл"
-            class="swiper__image"
-          />
+        <div class="swiper__buttons">
+          <div class="swiper-button-next swiper__button-next">
+            <svg class="swiper__icon" width="32px" height="32px">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev swiper__button-prev">
+            <svg class="swiper__icon" width="32px" height="32px">
+              <use href="./images/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            srcset="
-              ./images/homepage/restaurant_slider/restaurant_slider3-mobile.jpg     245w,
-              ./images/homepage/restaurant_slider/restaurant_slider3-mobile@2x.jpg  490w,
-              ./images/homepage/restaurant_slider/restaurant_slider3-tablet.jpg     194w,
-              ./images/homepage/restaurant_slider/restaurant_slider3-tablet@2x.jpg  388w,
-              ./images/homepage/restaurant_slider/restaurant_slider3-desktop.jpg    254w,
-              ./images/homepage/restaurant_slider/restaurant_slider3-desktop@2x.jpg 508w
-            "
-            src="./images/homepage/restaurant_slider/restaurant_slider3-desktop.jpg"
-            sizes="(min-width: 1200px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
-            alt="Готове замовлення"
-            class="swiper__image"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            srcset="
-              ./images/homepage/restaurant_slider/restaurant_slider4-mobile.jpg     245w,
-              ./images/homepage/restaurant_slider/restaurant_slider4-mobile@2x.jpg  490w,
-              ./images/homepage/restaurant_slider/restaurant_slider4-tablet.jpg     194w,
-              ./images/homepage/restaurant_slider/restaurant_slider4-tablet@2x.jpg  388w,
-              ./images/homepage/restaurant_slider/restaurant_slider4-desktop.jpg    254w,
-              ./images/homepage/restaurant_slider/restaurant_slider4-desktop@2x.jpg 508w
-            "
-            src="./images/homepage/restaurant_slider/restaurant_slider4-desktop.jpg"
-            sizes="(min-width: 1200px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245px, 60vw"
-            alt="Десерт"
-            class="swiper__image"
-          />
-        </div>
-      </div>
-      <div class="swiper-button-prev">
-        <svg class="swiper__icon" width="32px" height="32px">
-          <use href="./images/sprite.svg#icon-arrow-left"></use>
-        </svg>
-      </div>
-      <div class="swiper-button-next">
-        <svg class="swiper__icon" width="32px" height="32px">
-          <use href="./images/sprite.svg#icon-arrow-right"></use>
-        </svg>
       </div>
     </div>
   </div>
