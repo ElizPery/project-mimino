@@ -4,11 +4,33 @@ td {
 }
 
 .restaurant {
-  position: relative;
   padding: 32px 0px;
-  background: $bgrColorLemon;
+
   @include for-tablet-landscape-up {
+    padding-top: 58px;
+    padding-bottom: 40px;
     background: $bgrColorDarkLemon;
+  }
+
+  @include for-desktop-up {
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+      to right,
+      $bgrColorDarkLemon 26.4%,
+      rgba(186, 186, 186, 0.4) 26.6%,
+
+      $bgrColorDarkLemon 26.6%,
+
+      $bgrColorDarkLemon 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+
+      $bgrColorDarkLemon 50.2%,
+
+      $bgrColorDarkLemon 73.74%,
+      rgba(186, 186, 186, 0.4) 73.94%,
+
+      $bgrColorDarkLemon 73.94%
+    );
   }
 }
 
