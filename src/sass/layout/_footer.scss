@@ -15,7 +15,7 @@
 
 #0E0C07 51.5%,
 rgba(122, 122, 122, 0.4) 51.5%,
-#0E0C07 51.53%,
+#0E0C07 51.55%,
 #0E0C07 74.9%,
 rgba(122, 122, 122, 0.4) 74.9%,
 #0E0C07 74.93%,);
@@ -55,14 +55,15 @@ letter-spacing: 0.3em;
     @include for-tablet-landscape-up{
         width: 202px;
         margin-left: 122px;
-        margin-right: 163px;
+        // margin-right: 163px;
         margin-top: 32px;
     }
-    @include for-tablet-landscape-up{
-        margin-left: 146px;
-        margin-top:40px;
-        margin-right: 231px;
-    }
+        @include for-desktop-up {
+            margin-left: 146px;
+            margin-top: 40px;
+            margin-right: 231px;
+    
+        }
 } 
 .container__navigation-footer{
     @include for-phone-only {
@@ -78,12 +79,14 @@ letter-spacing: 0.3em;
 
     @include for-tablet-landscape-up{
         margin-top: 0;
-        margin-right: 129px;
-        margin-left: 0px;
+        margin-right: 133px;
+        margin-left: 163px;
     }
-         @include for-tablet-landscape-up {
-           margin-right: 199px;
-         }
+        @include for-desktop-up {
+          
+            margin-right: 199px;
+            margin-left: 0px;
+}
 }
 .footer__list{
     display: flex;
@@ -172,14 +175,13 @@ flex-wrap: wrap;
 }
 .footer__list-networks{
     @include style-list;
-    
-    @media (max-width:1023px) {
-        display: none;
-    }
+    display: none;
+ 
     @include for-tablet-landscape-up{
         display: flex;
         flex-direction: column;
         gap:10px;
+        
         
     }
 }
