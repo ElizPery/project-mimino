@@ -36,6 +36,10 @@
             }
         }
 
+        // @media (min-width: 1024px) {
+        //     display: flex;
+        // }
+
     &__location {
         display: flex;
         justify-content: center;
@@ -44,13 +48,19 @@
         height: 47px;
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
-        margin: 64px 0 70px auto;
-
-        @include for-tablet-landscape-up {
-        position: absolute;   
-        margin-bottom: 64px;
-        margin-left: 0;
+        
+        @include for-phone-only {
+        margin: 64px auto 70px 0;
         }
+        
+
+        // @media (min-width: 1024px) {
+        // position: absolute;   
+        // margin-bottom: 0;
+        // margin-left: 0;
+        // }
+
+
 
         }
 
@@ -131,7 +141,7 @@
     margin-bottom: 0;
 }
 
-.social {
+.social-hero {
     position: absolute;
     left: 15px;
     bottom: 20px;
