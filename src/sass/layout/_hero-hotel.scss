@@ -8,33 +8,33 @@
      background-size: cover;
      background-position: center;
 
-     background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-mobile.jpg);
+     background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-mobile.jpg);
 
      @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
-         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-mobile@2x.jpg);
+         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-mobile@2x.jpg);
      }
 
      background-repeat: no-repeat;
 
      @media (min-width: 1024px) {
-         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-tablet.jpg);
+         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-tablet.jpg);
 
          @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
-             background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-tablet@2x.jpg);
+             background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-tablet@2x.jpg);
          }
      }
 
      @media (min-width: 1280px) {
-         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-desktop.jpg);
+         background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-desktop.jpg);
 
          @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
-             background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-desktop@2x.jpg);
+             background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-desktop@2x.jpg);
          }
      }
 
