@@ -1,0 +1,146 @@
+.header {
+    &__container {
+        margin-top: 16px;
+
+        @include for-tablet-landscape-up {
+            margin-top: 24px;
+        }
+
+        @include for-desktop-up {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        list-style: none;
+
+    }
+
+    &__item--framed {
+
+        @include for-tablet-landscape-up {
+            border: 1px solid rgba(243, 198, 83, 0.7);
+            border-radius: 2px;
+        }
+
+    }
+
+    &__item--moved {
+        @include for-tablet-landscape-up {
+            margin-right: 72px;
+        }
+    }
+
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        color: $accentColor;
+
+        @include for-tablet-landscape-up {
+            margin-right: 32px;
+        }
+
+    }
+
+    &__icon {
+        fill: $accentColor;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 6px;
+        margin-right: 0;
+
+        &--margin {
+            @media (max-width: 1023px) {
+                margin-right: 20px;
+            }
+        }
+
+        @include for-tablet-landscape-up {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    &__phone {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+
+        margin-right: 8px;
+
+        color: $primaryWhite;
+
+        text-decoration: none;
+
+        &--space {
+            margin-left: 16px;
+        }
+    }
+
+
+    &__logo {
+        font-family: "Film P3";
+        text-decoration: none;
+        font-size: 36px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+
+        color: $primaryWhite;
+
+        @include for-desktop-up {
+            margin-right: 96px;
+        }
+    }
+
+    &__phone {
+        @media (max-width: 1023px) {
+            padding-right: 8px;
+            display: none;
+        }
+    }
+}
+
+
+
+.social-header {
+    &__icon {
+        fill: rgba(243, 198, 83, 0.7);
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+}
