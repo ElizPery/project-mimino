@@ -1,0 +1,236 @@
+.amenities__section {
+    @include for-phone-only {
+        padding: 20px 0px;
+    }
+
+    @include for-tablet-portrait-up {
+        padding: 32px 0px;
+    }
+
+    @include for-tablet-landscape-up {
+        padding: 48px 0px 40px 0ppx;
+    }
+
+    @include for-desktop-up {
+        padding: 48px 0px;
+        background: linear-gradient(to right,
+                #FFFDEE 26.65%,
+                rgba(186, 186, 186, 0.4)26.8%,
+
+                #FFFDEE 26.8%,
+                #FFFDEE 50%,
+                rgba(186, 186, 186, 0.4)50%,
+
+                #FFFDEE 50.15%,
+                #FFFDEE 73.5%,
+                rgba(186, 186, 186, 0.4)73.65%,
+
+                #FFFDEE 73.65%);
+        background-size: 100% 1280px;
+    }
+}
+
+
+.amenities__title {
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    color: $primaryBlack;
+
+    @media (max-width:413px) {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    @media (min-width:414px) {
+        margin-bottom: 16px;
+    }
+
+}
+
+.amenities__discription {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: $secondaryTextColor;
+
+    @include for-tablet-landscape-up {
+        line-height: 1.21;
+        width: 400px;
+
+    }
+
+}
+
+.amenities__subtitle {
+    font-family: "TimesNewRoman";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: $primaryBlack;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    @include for-tablet-landscape-up {
+        line-height: 1.15;
+
+    }
+
+}
+
+.amenities__box-second {
+    @include for-phone-only {
+        margin-top: 16px;
+    }
+
+    @include for-tablet-portrait-up {
+        margin-top: 16px;
+    }
+
+    @include for-tablet-landscape-up {
+
+        margin-top: 0;
+
+    }
+
+
+}
+
+.amenities__button {
+    background-color: $primaryBlack;
+    color: $primaryWhite;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.2;
+
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    @include for-phone-only {
+        font-size: 14px;
+        padding: 15px 30px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    @include for-tablet-portrait-up {
+        width: 384px;
+        height: 64px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+        padding: 20px 43px;
+    }
+
+    @include for-tablet-landscape-up {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 32px;
+        margin-left: auto;
+        width: 434px;
+        padding: 18px 38px;
+    }
+
+    @include for-desktop-up {
+        margin-left: 563px;
+    }
+}
+
+.link__amenities {
+    text-decoration: none;
+    font-family: 'Montserrat';
+
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brownColor;
+
+    display: flex;
+    align-items: center;
+
+    @include for-phone-only {
+        font-size: 12px;
+        gap: 8px;
+        margin-left: 16px;
+    }
+
+    @include for-tablet-portrait-up {
+        margin-left: 16px;
+        font-size: 16px;
+        gap: 16px;
+        white-space: nowrap;
+    }
+
+    @include for-tablet-landscape-up {
+
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 497px;
+    }
+
+    @include for-desktop-up {
+        margin-left: 563px;
+    }
+}
+
+.amenities__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: $brownColor;
+}
+
+.amenities__list {
+    @include style-list
+}
+
+.amenities__box {
+    @include for-tablet-landscape-up {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    @include for-desktop-up {
+        gap: 159px;
+    }
+}
+
+.amenities__subdiscription {
+    @extend .amenities__discription;
+
+    @include for-tablet-landscape-up {
+        width: 757px;
+    }
+}
+
+.amenities__discription-additional {
+    @extend .amenities__discription;
+
+    @include for-tablet-landscape-up {
+        width: 450px;
+    }
+
+    @include for-desktop-up {
+        width: 495px;
+    }
+}
+
+.amenities__box-third {
+    @include for-tablet-landscape-up {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include for-desktop-up {
+        gap: 64px;
+    }
+}
