@@ -1,0 +1,156 @@
+// .restaurant{
+//   background-color: rgba(0, 0, 0, 0.65);;
+//   box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+//   background-image:linear-gradient(
+//       to right,
+//       rgba(47,48,58,0.4),
+//       rgba(47,48,58,0.4)),
+//       url(./images/background/restaurant-bg-mobile.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   width: 100%;
+//   max-height: 735px;
+//       @media (min-device-pixel-ratio: 2),
+//           (min-resolution: 192dpi),
+//           (min-resolution: 2dppx){
+//               background-image:linear-gradient(
+//               to right,
+//               rgba(47,48,58,0.4),
+//               rgba(47,48,58,0.4)),
+//               url(./images/restaurant-bg-mobile@2x.jpg);
+//       }
+
+//       @media  (min-width: 1024px) {
+//           max-height: 620px;
+//           background-image:linear-gradient(
+//               to right,
+//               rgba(47,48,58,0.4),
+//               rgba(47,48,58,0.4)),
+//               url(./images/restaurant-bg-tablet.jpg);
+//           @media (min-device-pixel-ratio: 2),
+//           (min-resolution: 192dpi),
+//           (min-resolution: 2dppx){
+//               background-image:linear-gradient(
+//               to right,
+//               rgba(47,48,58,0.4),
+//               rgba(47,48,58,0.4)),
+//               url(./images/restaurant-bg-tablet@2x.jpg);
+//           }
+//       }
+
+//       @media  (min-width: 1280px) {
+//           max-width: 1600px;
+//           background-image:linear-gradient(
+//               to right,
+//               rgba(47,48,58,0.4),
+//               rgba(47,48,58,0.4)),
+//               url(./images/restaurant-bg-desktop.jpg);
+//           @media (min-device-pixel-ratio: 2),
+//           (min-resolution: 192dpi),
+//           (min-resolution: 2dppx){
+//               background-image:linear-gradient(
+//               to right,
+//               rgba(47,48,58,0.4),
+//               rgba(47,48,58,0.4)),
+//               url(./images/restaurant-bg-desktop@2x.jpg);
+//           }
+//       }
+  
+//   }
+
+.restaurant__logo{
+    max-width: 127px;
+    max-height: 43px;
+    margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height:calc(43 / 40);
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+     
+      @media  (min-width: 1024px) {
+          max-width: 202px;
+          max-height: 69px;
+          margin-bottom: 16px;
+          font-size: 64px;
+          line-height: calc(69 / 64);
+      }
+  }
+
+  .restaurant__header{
+    max-width: 127px;
+    max-height: 24px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height:calc(29 / 24);
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+        @media  (min-width: 1024px) {
+          max-width: 126px;
+          max-height: 29px;
+          margin-bottom: 8px;
+      }
+  }
+
+
+.restaurant__text{
+    max-width: 259px;
+    max-height: 62px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height:calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: #BABABA;
+
+          @media  (min-width: 1024px) {
+          max-width: 610px;
+          max-height: 44px;
+          margin-bottom: 40px;
+          font-size: 16px;
+          line-height:calc(20 / 16);
+      }
+}
+
+.swiper__button{
+    background: #FFFFFF;
+  }
+
+.restaurant__btn{
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 14px 24px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 2px solid #FFFFFF;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+  background: rgba(0, 0, 0, 0.4);
+}
