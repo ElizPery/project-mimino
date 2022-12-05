@@ -1,9 +1,9 @@
-.section__hero{
+.section__room-hero{
     @include for-tablet-portrait-up{
         padding: 143px 0px 14px 0px;
     }
 }
-.hero__title-room{
+.hero-room{
     font-family: 'Times New Roman';
         font-style: normal;
         font-weight: 700;
@@ -35,5 +35,5 @@
     fill: rgba(243, 198, 83, 0.7);
 }
 .hero__list-icons{
-    @extend style-list;
+ list-style-type: none;
 }

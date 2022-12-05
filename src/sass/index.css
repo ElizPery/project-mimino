@@ -533,12 +533,12 @@ ul {
 }
 
 @media (min-width: 414px) {
-  .section__hero {
+  .section__room-hero {
     padding: 143px 0px 14px 0px;
   }
 }
 
-.hero__title-room {
+.hero-room {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
@@ -547,7 +547,7 @@ ul {
   letter-spacing: 0.05em;
 }
 @media (min-width: 414px) {
-  .hero__title-room {
+  .hero-room {
     margin-top: 341px;
     margin-bottom: 14px;
   }
@@ -573,6 +573,10 @@ ul {
 
 .hero__icon {
   fill: rgba(243, 198, 83, 0.7);
+}
+
+.hero__list-icons {
+  list-style-type: none;
 }
 
 .modal-price {
