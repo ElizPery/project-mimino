@@ -1,51 +1,65 @@
-<div class="backdrop is-hidden" data-modal data-modal-1>
-    <div class="modal-table">
-        <button type="button" class="modal__close-button" data-modal-close>
-            <svg width="24" height="24">
-                <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <form class="form-table">
-            <h2 class="form__title">Забронювати столик</h2>
-            <div class="form__container">
-                <label class="form__label">
-                    <input required type="text" placeholder="Ваше ім'я" title="Вкажіть ім'я для броні"
-                        pattern="([a-zA-Zа-яА-Я]+)" class="form-table__input" />
-                    На кого забронювати столик?
-                </label>
-                <label class="form__label">
-                    <input required type="tel" title="+380xxxxxxxxx" placeholder="+38 (___) ___-__-__"
-                        pattern="([+][0-9\+]{12})" class="form-table__input" />
-                    Номер телефону
-                </label>
-            </div>
-            <div class="form__container">
-                <label class="form__label form__label--select">
-                    <select name="people" class="form-table__input">
-                        <option value="1">1</option>
-                        <option value="2" selected>2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-                    Столик на яку кількість осіб?
-                </label>
-                <label class="form__label form__label--select">
-                    <select name="date" class="form-table__input">
-                        <option value="06.12" selected>Сьогодні</option>
-                        <option value="07.12">07.12.2022</option>
-                        <option value="08.12">08.12.2022</option>
-                        <option value="09.12">09.12.2022</option>
-                        <option value="09.12">10.12.2022</option>
-                        <option value="09.12">11.12.2022</option>
-                    </select>
-                    На яку дату бронювати?
-                </label>
-            </div>
-            <button type="submit" class="form-btn">Оформити бронювання</button>
-        </form>
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button class="button-close" type="button" data-modal-close>
+      <svg class="button-close__icon" width="24 " height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-form">
+      <h2 class="modal-form__caption">ЗАБРОНЮВАТИ СТОЛИК</h2>
+      <form class="menu-form">
+        <div class="form-box">
+          <div class="menu-form__set">
+            <input
+              class="menu-form__input"
+              placeholder="Ваше ім’я"
+              type="text"
+              name="name"
+              id="name"
+            />
+            <label class="menu-form__label" for="name"
+              >На кого забронювати столик?</label
+            >
+          </div>
+          <div class="menu-form__set">
+            <input
+              class="menu-form__input"
+              placeholder="+38 (___) ___-__-__"
+              type="tel"
+              name="phone"
+              id="tel"
+            />
+            <label class="menu-form__label" for="name" <label for="tel"
+              >Номер телефону</label
+            >
+          </div>
+        </div>
+        <div class="form-box">
+          <div class="menu-form__set">
+            <select class="menu-form__input" id="amount" name="people">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label for="name" <label class="menu-form__select" for="amount"
+              >Столик на яку кількість осіб?</label
+            >
+          </div>
+          <div class="menu-form__set">
+            <select class="menu-form__input" id="amount" name="people">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label class="menu-form__select" for="name" <label for="date"
+              >На яку дату бронювати?</label
+            >
+          </div>
+        </div>
+      </form>
+      <button class="form-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
     </div>
+  </div>
 </div>
