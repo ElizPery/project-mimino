@@ -144,12 +144,12 @@
 
      padding: 15px 24px 13px;
 
-     @media (max-width: 1023px) {
-         margin-bottom: 24px;
-     }
+    @media (max-width: 1023px) {
+        margin-bottom: 24px;
+    }
 
-     @media (min-width: 1024px) {
-         margin-right: 40px;
+    @media (min-width: 1024px) {
+        margin-right: 40px;
 
         &--left {
             margin-left: 350px;
@@ -158,10 +158,10 @@
 }
 
 
- .button--moved {
-     margin-bottom: 0;
-     margin-right: 0;
- }
+.button--moved {
+    margin-bottom: 0;
+    margin-right: 0;
+}
 
 
 
