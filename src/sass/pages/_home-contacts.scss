@@ -4,10 +4,14 @@
 .contacts-page{
     position: relative;
     background-color: $bgrColorLemon;
-    padding-bottom: 32px;
+
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 32px;
+    }
 }
 
 .contacts-page__line {
+    position: relative;
     padding-top: 36px;
     background-image: linear-gradient(to right,
     $bgrColorLemon 33.81%,
@@ -21,7 +25,7 @@
     
     @include for-tablet-landscape-up {
         padding-top: 56px;
-        padding-bottom: 40px;
+        padding-bottom: 44px;
         background-image: linear-gradient(to right,
         $bgrColorLemon 25.57%,
         rgba(186, 186, 186, 0.4) 25.57%,
@@ -55,7 +59,7 @@
         }
 }
 
-.contacts__name{
+.contacts-page__name{
     width: 202px;
     font-family: "FilmP3";
     font-weight: 700;
@@ -65,12 +69,15 @@
     color: $fifthTextColor;
     margin-bottom: 12px;
 
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         font-size: 64px;
+    }
+
+    @include for-desktop-up {
         color: $fourthTextColor;
     }
 }
-.name_description{
+.contacts-page__name-description {
     font-family: "Montserrat" sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -80,11 +87,11 @@
     color: $primaryTextColor;
     margin-bottom: 16px;
 
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         margin-bottom: 52px;
     }
 }
-.location{
+.contacts-page__location{
     margin-right: 22px;
     font-family: "Montserrat";
     font-style: normal;
@@ -94,11 +101,11 @@
     letter-spacing: 0.02em;
     color: $brownColor;
 
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         margin-right: 0;
     }
 }
-.location__hotel{
+.contacts-page__location-hotel{
     margin-right: 55px;
     font-family: "Montserrat";
     font-style: normal;
@@ -109,11 +116,11 @@
     color: $brownColor;
 
     
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         margin-right: 0;
     }
 }
-.tel{
+.contacts-page__tel{
     display: flex;
     text-decoration: none;
     font-family: "Montserrat";
@@ -124,11 +131,11 @@
     color: $fifthTextColor;
     flex-wrap: nowrap;
 }
-.tel:last-child{
+.contacts-page__tel:last-child{
     margin-right: 8px;
 }
 
-.contacts-aria__tel{
+.contacts-page__contacts-aria-tel{
     display: flex;
     align-items: center;
     border-width: 0.5px;
@@ -144,48 +151,48 @@
         flex-wrap: wrap;
     }
 }
-.map{
+.contacts-page__map{
     border: 1px solid #BABABA;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
-    @media (max-width:414px) {
+    @include for-phone-only {
         width: 100%;        
         height: 220px;
     }
-    @media (min-width:414px) {
+    @include for-tablet-portrait-up {
         width: 384px;
         height: 220px;
     }
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         width: 535px;
         height: 412px;
     }
-    @media (min-width:1280px) {
+    @include for-desktop-up {
         width: 634px;
         height: 412px;
     }
 }
-.restaurant{
+.contacts-page__restaurant{
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
 
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
     }
 }
-.hotel{
+.contacts-page__hotel{
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
 
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -193,7 +200,7 @@
         margin-bottom: 48px;
     }
 }
-.contacts-aria__address{
+.contacts-page__contacts-aria-address{
     margin-left: auto;    
     width: 260px;
     display: flex;
@@ -208,33 +215,36 @@
     @media (max-width:412px) {
         width: 100%;
     }
-    @media (min-width:1024px) {
+
+    @include for-tablet-landscape-up {
         width: 285px;
         margin-left: 0;
         margin-right: auto;
     }
 }
-.address-wrap{
+.contacts-page__address-wrap{
     @media (max-width:1024px) {
     display: flex;
     flex-direction: column;
     }
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         display: flex;
         flex-direction: row;        
     }
 }
-.address-wrapper{
+.contacts-page__address-wrapper{
     position: relative;
-    margin-bottom: 36px;
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
 }
-.contacts-aria__icon{
+.contacts-page__contacts-aria-icon{
     width: 24px;
     height: 24px;
-    fill: $accentColor;
+    fill: $brownColor;
     margin-left: 8px;
 }
-.address{
+.contacts-page__address{
     font-style: inherit;
     text-decoration: none;
     margin-top: 8px;
@@ -254,24 +264,28 @@
 
     }
 }
-.address-wrap__title{
-    @media (min-width:1024px) {
+.contacts-page__address-wrap-title{
+    @include for-tablet-landscape-up {
     display: flex;
     margin-right: 7px;
 }
 }
-.address-wrap__title:not(:last-child){    
+.contacts-page__address-wrap-title:not(:last-child){    
     margin-right: 7px;
 }
-.map-wrapper{
-    @media (max-width:1024px) {
+.contacts-page__map-wrapper{
+    @media (max-width:1023px) {
         display: flex;
         justify-content: center;
         align-items: center;        
     }
-    @media (min-width:1024px) {
+    @include for-tablet-landscape-up {
         position: absolute;
         top: 69px;
         right: 47px;
+    }
+
+    @include for-desktop-up {
+        right: 85px;
     }
 }
