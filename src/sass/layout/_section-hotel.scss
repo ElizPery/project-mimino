@@ -2,19 +2,86 @@
   @include for-tablet-landscape-up{
     position: relative;
   }
-  @include for-phone-only{
-    padding-top: 32px;
-    padding-bottom: 32px;
+  background-color:$bgrColorLemon;
+}
+
+.hotel__room-lemon-line {
+  
+  @include for-phone-only {
+      padding-top: 32px;
+      padding-bottom: 32px;
   }
-  @include for-tablet-portrait-up{
+
+  @include for-tablet-portrait-up {
     padding-top: 66px;
     padding-bottom: 40px;
   }
-  @include for-desktop-up{
+
+  @include for-desktop-up {
     padding-top: 72px;
     padding-bottom: 50px;
+  
+    background-image: linear-gradient(to right,
+      $bgrColorLemon 23.51%,
+      rgba(186, 186, 186, 0.4) 23.51%,
+      rgba(186, 186, 186, 0.4) 23.59%,
+      $bgrColorLemon 23.59%,
+      $bgrColorLemon 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.09%,
+      $bgrColorLemon 50.09%,
+      $bgrColorLemon 76.4%,
+      rgba(186, 186, 186, 0.4) 76.4%,
+      rgba(186, 186, 186, 0.4) 76.49%,
+      $bgrColorLemon 76.49%);
+    }
+}
+
+.hotel__room-darklemon-line {
+  @include for-phone-only {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  
+    @include for-tablet-portrait-up {
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+  
+    @include for-desktop-up {
+  
+      background-image: linear-gradient(to right,
+          $bgrColorDarkLemon 23.51%,
+          rgba(186, 186, 186, 0.4) 23.51%,
+          rgba(186, 186, 186, 0.4) 23.59%,
+          $bgrColorDarkLemon 23.59%,
+          $bgrColorDarkLemon 50%,
+          rgba(186, 186, 186, 0.4) 50%,
+          rgba(186, 186, 186, 0.4) 50.09%,
+          $bgrColorDarkLemon 50.09%,
+          $bgrColorDarkLemon 74.43%,
+          rgba(186, 186, 186, 0.4) 74.43%,
+          rgba(186, 186, 186, 0.4) 74.52%,
+          $bgrColorDarkLemon 74.52%);
+    }
+}
+
+.hotel__room-lemon-line--tablet {
+  @include for-tablet-landscape-up {
+    background-image: linear-gradient(to right,
+    $bgrColorLemon 25.57%,
+    rgba(186, 186, 186, 0.4) 25.57%,
+    rgba(186, 186, 186, 0.4) 25.67%,
+    $bgrColorLemon 25.67%,
+    $bgrColorLemon 50%,
+    rgba(186, 186, 186, 0.4) 50%,
+    rgba(186, 186, 186, 0.4) 50.1%,
+    $bgrColorLemon 50.1%,
+    $bgrColorLemon 74.43%,
+    rgba(186, 186, 186, 0.4) 74.43%,
+    rgba(186, 186, 186, 0.4) 74.52%,
+    $bgrColorLemon 74.52%);
   }
-  background-color:$bgrColorLemon;
 }
 
 
@@ -23,15 +90,6 @@
     position: relative;
   }
   background-color: $bgrColorDarkLemon;
-
-  @include for-phone-only{
-    padding-top:32px;
-    padding-bottom: 32px;
-  }
-  @include for-tablet-portrait-up{
-    padding-top: 66px;
-    padding-bottom: 40px
-  }
 }
 .room-short-desc__label{
 @include label;
