@@ -1,5 +1,6 @@
 .hero {
-    position: fixed;
+    position: absolute;
+    
     max-width: 1600px;
     min-height: 740px;
     background-color: $colorFooter;
@@ -8,6 +9,11 @@
     background-position: center;
     
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero-main-mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero-main-mobile@2x.jpg);
+        }
     background-repeat: no-repeat;
     
 
