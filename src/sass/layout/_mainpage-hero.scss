@@ -1,5 +1,5 @@
 .hero {
-    position: absolute;
+    position: relative;
     z-index: 0;
     max-width: 1600px;
     min-height: 740px;
@@ -45,6 +45,12 @@
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
         margin: 64px 0 70px auto;
+
+        @include for-tablet-landscape-up {
+            position: absolute;   
+            margin-bottom: 64px;
+            margin-left: 0;
+        }
 
         }
 
@@ -100,9 +106,6 @@
         color: $primaryWhite;
         margin-bottom: 113px;
     }
-
-    
-
 }
 
 .button {
