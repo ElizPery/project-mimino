@@ -1,4 +1,5 @@
 .hero {
+    position: fixed;
     max-width: 1600px;
     min-height: 740px;
     background-color: $colorFooter;
@@ -6,8 +7,9 @@
     background-size: cover;
     background-position: center;
     
-    background-image: url(../images/homepage/hero-main-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero-main-mobile.jpg);
     background-repeat: no-repeat;
+    
 
     &__location {
         display: flex;
@@ -64,7 +66,7 @@
         letter-spacing: 0.05em;
         
         color: $primaryWhite;
-        margin-bottom: auto;
+        margin-bottom: 113px;
     }
 
     
@@ -85,15 +87,21 @@
     color: $accentColor;
 
     padding: 15px 24px 13px;
-    
 
+    margin-bottom: 24px;
+
+
+}
+.button--moved {
+    margin-bottom: 0;
 }
 
 .social {
-    margin-top: auto;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
     &__icon {
         fill: rgba(243, 198, 83, 0.7);
-
     }
 
     &__menu {
