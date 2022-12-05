@@ -12,7 +12,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero-main-mobile@2x.jpg);
+            background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/homepage/hero-main-mobile@2x.jpg);
         }
     background-repeat: no-repeat;
     
@@ -21,12 +21,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 179px;
-        height: 30px;
+        width: 210px;
+        height: 47px;
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
-        margin-bottom: 70px;
-        margin-left: auto;
+        margin: 64px 0 70px auto;
+
+        }
+
+    &__icon {
+        margin: 15px;
+        fill: $accentColor;
+        width: 20px;
+        height: 20px;
     }
     
     &__link {
@@ -111,7 +118,6 @@
     }
 
     &__menu {
-        
         display: flex;
         justify-content: flex-start;
         align-items: center;

@@ -94,20 +94,20 @@
         margin-right: 8px;
 
 
-        // color: $primaryWhite;
+        color: $primaryWhite;
 
         text-decoration: none;
     }
 
 
     &__logo {
-        font-family: "Film P3";
+        font-family: "FilmP3";
         text-decoration: none;
         font-size: 36px;
         line-height: 1.08;
         letter-spacing: 0.3em;
 
-        // color: $primaryWhite;
+        color: $primaryWhite;
 
         @include for-desktop-up {
             margin-right: 96px;
@@ -135,11 +135,11 @@
     }
 
     &__menu {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        // list-style: none;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 20px;
 
         @media (max-width: 1280px) {
             display: none;
