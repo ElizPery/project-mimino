@@ -1,5 +1,5 @@
 .header {
-     &__container {
+    &__container {
         margin-top: 16px;
         @include for-tablet-landscape-up {
         margin-top: 24px; 
@@ -24,7 +24,7 @@
     &__item {
         display: flex;
         align-items: center;
-       
+
         list-style: none;
         
     }
@@ -56,7 +56,7 @@
 
         margin-right: 6px;
         @include for-tablet-landscape-up {
-           margin-right: 32px;
+        margin-right: 32px;
             }
 
     }
@@ -72,21 +72,17 @@
         margin-right: 20px;
         }
     }
-   
+
     &__phone {
-     
-     
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-     
     
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
     
     margin-right: 8px;
-     
     
     // color: $primaryWhite;
 
@@ -106,9 +102,6 @@
         @include for-desktop-up {
             margin-right: 96px;
         }       
-         
-          
-       
     }
 
     &__phone {
@@ -117,25 +110,23 @@
             display: none;
         }
     }
-   
 }
 
 
 
-.social {
+.social-header {
     &__icon {
         fill: rgba(243, 198, 83, 0.7);
-        
     }
 
     &__menu {
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-     
-   @media (max-width: 1280px) {
+    list-style: none;
+
+    @media (max-width: 1280px) {
         display: none;
         }
     }
