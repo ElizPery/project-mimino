@@ -36,10 +36,6 @@
             }
         }
 
-        // @media (min-width: 1024px) {
-        //     display: flex;
-        // }
-
     &__location {
         display: flex;
         justify-content: center;
@@ -151,18 +147,24 @@
     }
 
     @media (min-width: 1024px) {
-    
     margin-right: 40px;
 
-    
-        }
+    &--left {
+    margin-left: 350px;
+}
+
+    }
 
 
 }
+
+
 .button--moved {
     margin-bottom: 0;
     margin-right: 0;
 }
+
+
 
 .social-hero {
     position: absolute;
