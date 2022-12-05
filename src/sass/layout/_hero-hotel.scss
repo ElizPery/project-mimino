@@ -109,25 +109,11 @@
          margin-bottom: 40px;
 
          @media (min-width: 1024px) {
-             margin-bottom: 56px;
+             margin-bottom: 302px;
          }
      }
 
-     &__item {
-         font-family: 'Times New Roman';
-         font-weight: 700;
-         font-size: 32px;
-         line-height: 1.156;
-         letter-spacing: 0.05em;
-
-         color: $primaryWhite;
-         margin-bottom: 113px;
-
-         @media (min-width: 1024px) {
-             margin-bottom: 204px;
-         }
-
-     }
+      
  }
 
  .button {
