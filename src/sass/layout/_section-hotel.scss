@@ -1,5 +1,5 @@
 .hotel__room-lemon{ 
-   @include for-tablet-landscape-up{
+  @include for-tablet-landscape-up{
     position: relative;
   }
   @include for-phone-only{
@@ -129,7 +129,7 @@
     margin-bottom: 188px;
    }
 }
-.hotel__img--small {
+.hotel__img-lemon {
   @include drop-shadow;
   @include img;
   margin-left: auto;
@@ -145,7 +145,7 @@
       right:180px;
   } 
 }
-.hotel__img--big{
+.hotel__img-darklemon{
   @include drop-shadow;
   @include img;
   margin-right: auto;
@@ -191,9 +191,9 @@ padding-bottom: 16px;
 .swiper__slide {
   @include drop-shadow;
   margin-bottom: 12px;
-  width: 245px;
+  width: 194px;
  @include for-tablet-portrait-up {
-    width: 245px;
+    width: 194px;
     margin-bottom: 20px;
   }
  @include for-tablet-landscape-up {
@@ -204,11 +204,18 @@ padding-bottom: 16px;
   }
 }
 .set__container{
+  
   @include for-tablet-landscape-up {
     width: 428px;
   }
   @include for-desktop-up{
     width: 550px;
+  }
+  &-left{
+    margin-left: 100px;
+  }
+  &-right{
+    margin-right: 100px;
   }
 }
 .swiper__position{
@@ -231,4 +238,7 @@ padding-bottom: 16px;
     @include between;
     flex-direction:row-reverse;
   }
+}
+.hotel__room-lemon--line{
+  
 }
