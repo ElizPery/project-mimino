@@ -259,7 +259,8 @@
         color: $primaryBlack;
 
         &:hover,
-        &:focus {
+        &:active,
+        &:focus-visible {
             color: $accentColor;
         }
     }
