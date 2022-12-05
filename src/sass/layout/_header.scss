@@ -135,14 +135,17 @@
     }
 
     &__menu {
-        // list-style: none;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // gap: 20px;
-
-        @media (max-width: 1280px) {
+    @media (max-width: 1280px) {
             display: none;
         }
+       
+       
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+     
     }
 }
