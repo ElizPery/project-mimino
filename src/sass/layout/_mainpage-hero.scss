@@ -170,6 +170,11 @@
     position: absolute;
     left: 15px;
     bottom: 20px;
+
+    @media (min-width: 1280px) {
+            display: none;
+        }
+
     &__icon {
         fill: rgba(243, 198, 83, 0.7);
     }
