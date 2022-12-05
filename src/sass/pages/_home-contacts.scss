@@ -1,67 +1,23 @@
-.hidden-caption{
-    visibility: hidden;
+.contacts-page__title{
+    @include visually-hidden;
 }
-.contacts{
+.contacts-page{
     position: relative;
-  
-    background-image: linear-gradient(
-      to right,
-      $bgrColorLemon 33.81%,
-      rgba(186, 186, 186, 0.4) 33.81%,
-      rgba(186, 186, 186, 0.4) 34.06%,
-      $bgrColorLemon 34.06%,
-      $bgrColorLemon 65.94%,
-      rgba(186, 186, 186, 0.4) 65.94%,
-      rgba(186, 186, 186, 0.4) 66.18%,
-      $bgrColorLemon 66.18%
-    );
-  
-    @include for-tablet-landscape-up {
-  
-      background-image: linear-gradient(
-        to right,
-        $bgrColorLemon 25.57%,
-        rgba(186, 186, 186, 0.4) 25.57%,
-        rgba(186, 186, 186, 0.4) 25.67%,
-        $bgrColorLemon 25.67%,
-        $bgrColorLemon 50%,
-        rgba(186, 186, 186, 0.4) 50%,
-        rgba(186, 186, 186, 0.4) 50.1%,
-        $bgrColorLemon 50.1%,
-        $bgrColorLemon 74.32%,
-        rgba(186, 186, 186, 0.4) 74.32%,
-        rgba(186, 186, 186, 0.4) 74.42%,
-        $bgrColorLemon 74.42%
-      );
-    }
-  
-    @include for-desktop-up {
-  
-      background-image: linear-gradient(
-        to right,
-        $bgrColorLemon 23.51%,
-        rgba(186, 186, 186, 0.4) 23.51%,
-        rgba(186, 186, 186, 0.4) 23.59%,
-        $bgrColorLemon 23.59%,
-        $bgrColorLemon 50%,
-        rgba(186, 186, 186, 0.4) 50%,
-        rgba(186, 186, 186, 0.4) 50.09%,
-        $bgrColorLemon 50.09%,
-        $bgrColorLemon 76.4%,
-        rgba(186, 186, 186, 0.4) 76.4%,
-        rgba(186, 186, 186, 0.4) 76.49%,
-        $bgrColorLemon 76.49%
-      );
+    background-color: $bgrColorLemon;
 }
+
+.contacts-page__line {
+    
 }
+
 .contacts__name{
-    width: 127px;
+    width: 202px;
     font-family: "FilmP3";
     font-weight: 700;
     font-size: 40px;
     line-height: 1.07;
     letter-spacing: 0.3em;
-    color: $fourthTextColor;
+    color: $fifthTextColor;
     margin-bottom: 12px;
 
     @media (min-width:1024px) {
@@ -135,8 +91,8 @@
     border-color: $accentColor;
     border-radius: 2px;
     background-color: $primaryWhite;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 9px;
+    padding-bottom: 7px;
     gap: 8px;
 
     @media (max-width:414px) {
