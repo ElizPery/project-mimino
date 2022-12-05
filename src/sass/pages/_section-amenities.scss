@@ -4,19 +4,23 @@
 
 .amenities__lines {
     @include for-phone-only {
-        padding: 20px 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     @include for-tablet-portrait-up {
-        padding: 32px 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     
     @include for-tablet-landscape-up {
-        padding: 48px 0px 40px 0px;
+        padding-top: 48px;
+        padding-bottom: 40px;
     }
 
     @include for-desktop-up {
-        padding: 48px 0px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     
         background-image: linear-gradient(to right,
         $bgrColorLemon 23.51%,
@@ -41,6 +45,7 @@
     font-size: 32px;
     line-height: 1.15;
     color: $primaryBlack;
+    text-transform: uppercase;
 
     @media (max-width:413px) {
         text-align: center;
@@ -74,6 +79,7 @@
     font-size: 24px;
     line-height: 1;
     color: $primaryBlack;
+    text-transform: uppercase;
     margin-top: 32px;
     margin-bottom: 16px;
 
@@ -108,6 +114,7 @@
     font-family: 'Montserrat';
     font-size: 20px;
     line-height: 1.2;
+    text-transform: uppercase;
 
     border-radius: 25px;
     display: flex;

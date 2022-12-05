@@ -249,7 +249,8 @@
         cursor: pointer;
 
         &:hover,
-        &:focus {
+        &:active,
+        &:focus-visible {
             color: $accentColor;
         }
     }

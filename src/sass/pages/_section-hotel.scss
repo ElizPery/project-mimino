@@ -435,3 +435,17 @@
 .room-short-desc__list-button {
     @include style-list;
 }
+
+.swiper__button-room {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $primaryBlack;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+        color: $accentColor;
+    }
+}
