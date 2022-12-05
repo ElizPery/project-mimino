@@ -1,30 +1,5 @@
 .footer {
     background-color: $colorFooter;
-
-    @include for-phone-only {
-        padding: 30px 0px;
-    }
-
-    @include for-tablet-portrait-up {
-
-        padding: 40px 0px;
-    }
-
-    @include for-tablet-landscape-up {
-        padding: 80px 0px;
-    }
-
-    @include for-desktop-up {
-        background: linear-gradient(to right,
-
-                #0E0C07 51.5%,
-                rgba(122, 122, 122, 0.4) 51.5%,
-                #0E0C07 51.55%,
-                #0E0C07 74.9%,
-                rgba(122, 122, 122, 0.4) 74.9%,
-                #0E0C07 74.93%, );
-        background-size: 100% 1280px;
-    }
 }
 
 .footer__list {
@@ -216,7 +191,38 @@
 }
 
 .footer__container {
+    @include for-phone-only {
+            padding: 30px 0px;
+    }
+    
+    @include for-tablet-portrait-up {
+        padding: 40px 0px;
+    }
+    
     @include for-tablet-landscape-up {
         display: flex;
+        padding: 80px 0px;
+        background-image: linear-gradient(to right,
+        $colorFooter 50%,
+        rgba(186, 186, 186, 0.4) 50%,
+        rgba(186, 186, 186, 0.4) 50.1%,
+        $colorFooter 50.1%,
+        $colorFooter 74.32%,
+        rgba(186, 186, 186, 0.4) 74.32%,
+        rgba(186, 186, 186, 0.4) 74.42%,
+        $colorFooter 74.42%);
     }
+
+    @include for-desktop-up {
+        background-image: linear-gradient(to right,
+        $colorFooter 50%,
+        rgba(186, 186, 186, 0.4) 50%,
+        rgba(186, 186, 186, 0.4) 50.09%,
+        $colorFooter 50.09%,
+        $colorFooter 76.4%,
+        rgba(186, 186, 186, 0.4) 76.4%,
+        rgba(186, 186, 186, 0.4) 76.49%,
+        $colorFooter 76.49%);
+    }
+
 }

@@ -1,32 +1,36 @@
 .amenities__section {
+    background-color: $bgrColorLemon;
+}
+
+.amenities__lines {
     @include for-phone-only {
         padding: 20px 0px;
     }
-
+    
     @include for-tablet-portrait-up {
         padding: 32px 0px;
     }
-
+    
     @include for-tablet-landscape-up {
-        padding: 48px 0px 40px 0ppx;
+        padding: 48px 0px 40px 0px;
     }
 
     @include for-desktop-up {
         padding: 48px 0px;
-        background: linear-gradient(to right,
-                #FFFDEE 26.65%,
-                rgba(186, 186, 186, 0.4)26.8%,
-
-                #FFFDEE 26.8%,
-                #FFFDEE 50%,
-                rgba(186, 186, 186, 0.4)50%,
-
-                #FFFDEE 50.15%,
-                #FFFDEE 73.5%,
-                rgba(186, 186, 186, 0.4)73.65%,
-
-                #FFFDEE 73.65%);
-        background-size: 100% 1280px;
+    
+        background-image: linear-gradient(to right,
+        $bgrColorLemon 23.51%,
+        rgba(186, 186, 186, 0.4) 23.51%,
+        rgba(186, 186, 186, 0.4) 23.59%,
+        $bgrColorLemon 23.59%,
+        $bgrColorLemon 50%,
+        rgba(186, 186, 186, 0.4) 50%,
+        rgba(186, 186, 186, 0.4) 50.09%,
+        $bgrColorLemon 50.09%,
+        $bgrColorLemon 76.4%,
+        rgba(186, 186, 186, 0.4) 76.4%,
+        rgba(186, 186, 186, 0.4) 76.49%,
+        $bgrColorLemon 76.49%);
     }
 }
 
