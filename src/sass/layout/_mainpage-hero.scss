@@ -146,7 +146,7 @@
 
     padding: 15px 24px 13px;
 
-    @include for-phone-only {
+    @media (max-width: 1023px) {
     margin-bottom: 24px;
     }
 
