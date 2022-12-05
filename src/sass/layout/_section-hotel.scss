@@ -1,4 +1,4 @@
-.hotel__room-lemon{ 
+.hotel-rooms__lemon{ 
   @include for-tablet-landscape-up{
     position: relative;
   }
@@ -16,7 +16,9 @@
   }
   background-color:$bgrColorLemon;
 }
-.hotel__room-darklemon{
+
+
+.hotel-rooms__darklemon{
   @include for-tablet-landscape-up{
     position: relative;
   }
@@ -31,7 +33,7 @@
     padding-bottom: 40px
   }
 }
-.hotel__label{
+.room-short-desc__label{
 @include label;
   margin-bottom: 32px;
   @include for-tablet-landscape-up{
@@ -41,7 +43,7 @@
     margin-bottom: 72px;
   }
 }
-.hotel__title{
+.room-short-desc__title{
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
@@ -60,12 +62,13 @@
     }
   color: $thirdTextColor;
 }
-.hotel__name{
+.room-short-desc__name{
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 
   margin-bottom: 12px;
     @include for-tablet-landscape-up{
@@ -78,7 +81,7 @@
     }
   color: $primaryBlack;
   }
-.hotel__about{
+.room-short-desc__about{
   font-family: 'Montserrat';
   width: 258px;
   font-weight: 600;
@@ -103,7 +106,7 @@
     margin-bottom: 188px;
    }
 }
-.hotel__about-lemon{
+.room-short-desc__about-lemon{
   font-family: 'Montserrat';
   width: 258px;
   font-weight: 600;
@@ -162,9 +165,9 @@
   }
 }
 .hotel__button-box:not(:last-child){
-padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-.hotel__info{
+.room-short-desc__info{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -238,7 +241,4 @@ padding-bottom: 16px;
     @include between;
     flex-direction:row-reverse;
   }
-}
-.hotel__room-lemon--line{
-  
 }
