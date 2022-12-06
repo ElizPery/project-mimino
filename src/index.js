@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
-    navigation: {
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
@@ -14,3 +14,23 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const detailsSwiper = new Swiper('.details-swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  loopedSlidesLimit: false,
+  loopedSlides: 6,
+  loopPreventsSlide: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 34,
+    },
+    1280: {
+      spaceBetween: 87,
+    },
+  },
+});
