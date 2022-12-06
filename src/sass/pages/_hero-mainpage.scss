@@ -48,8 +48,13 @@
         position: relative;
         height: 740px;
 
+        @media screen and (max-width: 1023px) {
+            padding-top: 64px;
+        }
+
         @include for-tablet-landscape-up {
             height: 720px;
+            padding-top: 0;
         }
     }
 
@@ -64,7 +69,8 @@
         border-radius: 2px;
 
         @include for-phone-only {
-            margin: 64px auto 70px 0;
+            margin-bottom: 70px;
+            margin-right: 0px;
         }
 
 
@@ -97,12 +103,14 @@
         font-size: 12px;
         line-height: 1.25;
         letter-spacing: 0.01em;
+        width: 179px;
 
         color: #E5E5E5;
         text-decoration: none;
 
         @include for-tablet-landscape-up {
             font-size: 16px;
+            width: 233px;
         }
     }
 

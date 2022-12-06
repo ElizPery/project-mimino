@@ -1,9 +1,9 @@
 .header {
-    position: absolute;
-    z-index: 1;
 
     &__container {
         margin-top: 16px;
+        position: absolute;
+        z-index: 1;
 
         @include for-tablet-landscape-up {
             margin-top: 24px;
@@ -74,7 +74,11 @@
         margin-right: 0;
 
         &--margin {
-            @media (max-width: 1023px) {
+            @media screen and (max-width: 400px) {
+                margin-right: 10px;
+            }
+
+            @media  screen and (min-width: 401px) and (max-width: 1023px) {
                 margin-right: 20px;
             }
         }
@@ -112,8 +116,22 @@
         font-size: 36px;
         line-height: 1.08;
         letter-spacing: 0.3em;
+        margin-right: 42px;
 
         color: $primaryWhite;
+
+        @media screen and (max-width: 400px) {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        @media screen and (min-width:381px) and (max-width: 400px) {
+            margin-right: 80px;
+        }
+
+        @include for-tablet-landscape-up {
+            margin-right: 110px;
+        }
 
         @include for-desktop-up {
             margin-right: 96px;
@@ -131,6 +149,10 @@
 
 
 .social-header {
+    @include for-desktop-up {
+            margin-left: 79px;
+    }
+
     &__icon {
         fill: rgba(243, 198, 83, 0.7);
     }
