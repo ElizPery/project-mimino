@@ -23,5 +23,6 @@ modalOverlay.addEventListener('click', (e) => {
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
+    
 	}
 });
