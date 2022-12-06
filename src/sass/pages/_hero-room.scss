@@ -1,0 +1,258 @@
+.hero-room {
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    @include for-phone-only {
+      width: 100%;
+      height: auto;
+    }
+
+    @include for-tablet-portrait-up {
+      width: 414px;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 1024px;
+    }
+
+    @include for-desktop-up {
+      width: 1280px;
+    }
+  }
+
+  &__image {
+    @include img;
+  }
+
+  &__gradient {
+    @include img;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    position: absolute;
+    left: 15px;
+    bottom: 193px;
+    z-index: 3;
+    width: 325px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: $primaryWhite;
+
+    @include for-tablet-landscape-up {
+      left: 47px;
+      bottom: 211px;
+      width: 507px;
+      font-size: 36px;
+    }
+
+    @include for-desktop-up {
+      left: 85px;
+      bottom: 155px;
+    }
+  }
+  &__description {
+    position: absolute;
+    z-index: 3;
+    left: 15px;
+    bottom: 118px;
+    width: 325px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $primaryWhite;
+
+    @include for-tablet-landscape-up {
+      left: 47px;
+      bottom: 104px;
+      width: 400px;
+      font-size: 16px;
+    }
+
+    @include for-desktop-up {
+      left: 85px;
+      bottom: 48px;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__social {
+    position: absolute;
+    z-index: 3;
+    color: rgba(243, 198, 83, 0.7);
+    text-decoration: none;
+
+    @include for-desktop-up {
+      @include visually-hidden;
+    }
+
+    &--instagram {
+      left: 15px;
+      bottom: 78px;
+
+      @include for-tablet-landscape-up {
+        left: 372px;
+        bottom: 38px;
+      }
+    }
+
+    &--facebook {
+      left: 15px;
+      bottom: 46px;
+
+      @include for-tablet-landscape-up {
+        left: 416px;
+        bottom: 38px;
+      }
+    }
+
+    &--telegram {
+      left: 15px;
+      bottom: 14px;
+
+      @include for-tablet-landscape-up {
+        left: 460px;
+        bottom: 38px;
+      }
+    }
+  }
+
+  &__address {
+    position: absolute;
+    z-index: 3;
+    top: 65px;
+    right: 15px;
+    width: 210px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @include for-tablet-landscape-up {
+      left: 47px;
+      top: 640px;
+      width: 285px;
+      height: 56px;
+      padding: 8px;
+      gap: 10px;
+    }
+
+    @include for-desktop-up {
+      @include visually-hidden;
+    }
+  }
+
+  &__address-link {
+    width: 170px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: #e5e5e5;
+
+    @include for-tablet-landscape-up {
+      width: 233px;
+      font-size: 16px;
+    }
+  }
+
+  &__address-icon {
+    width: 20px;
+    height: 20px;
+    fill: #f3c653;
+
+    @include for-tablet-landscape-up {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__price-button {
+    position: absolute;
+    z-index: 3;
+    left: 109px;
+    bottom: 40px;
+    padding: 14px 35px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid $primaryWhite;
+    border-radius: 25px;
+
+    @include for-tablet-landscape-up {
+      left: 745px;
+      bottom: 64px;
+    }
+
+    @include for-desktop-up {
+      left: 963px;
+      bottom: 66px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    color: $accentColor;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: transparent;
+    padding: 0;
+
+    &:disabled {
+      color: $primaryWhite;
+    }
+
+    &--prev {
+      left: 15px;
+      bottom: 350px;
+
+      @include for-tablet-landscape-up {
+        left: 47px;
+        bottom: 340px;
+      }
+
+      @include for-desktop-up {
+        left: 85px;
+        bottom: 267px;
+      }
+    }
+
+    &--next {
+      right: 15px;
+      bottom: 350px;
+
+      @include for-tablet-landscape-up {
+        right: 47px;
+        bottom: 340px;
+      }
+
+      @include for-desktop-up {
+        right: 85px;
+        bottom: 267px;
+      }
+    }
+  }
+}
