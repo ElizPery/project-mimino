@@ -7,6 +7,7 @@
   background-size: cover;
    margin-left: auto;
    margin-right: auto;
+  
   background-color: rgba(0, 0, 0, 0.65);
   box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image:linear-gradient(
@@ -62,22 +63,17 @@
 }
 
 .restaurant__logo{
-    max-width: 127px;
-    max-height: 43px;
-    margin-bottom: 12px;
-    
-
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height:calc(43 / 40);
     letter-spacing: 0.3em;
-    color: #FFFFFF;
+    color:$primaryWhite;
+
+    margin-bottom: 12px;
 
       @media  (min-width: 1024px) {
-          max-width: 202px;
-          max-height: 69px;
           margin-bottom: 16px;
           font-size: 64px;
           line-height: calc(69 / 64);
@@ -85,18 +81,15 @@
   }
 
   .restaurant__header{
-    max-width: 127px;
-    max-height: 24px;
-    margin-bottom: 20px;
-    
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height:calc(29 / 24);
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+
+    color: $primaryWhite;
+    margin-bottom: 20px;
 
         @media  (min-width: 1024px) {
           max-width: 126px;
@@ -168,10 +161,11 @@
   color: #F3C653;
   background: rgba(0, 0, 0, 0.4);
 }
-.restaurant__wrrap-text{
+.restaurant__wrap-text{
   display: flex;
   width: 259px;
   flex-direction: column;
   margin-left: auto;
+  padding-top: 24px;
 
 }
