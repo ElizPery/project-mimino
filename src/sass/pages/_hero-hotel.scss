@@ -45,6 +45,7 @@
         margin-bottom: 178px;
 
         @include for-tablet-landscape-up {
+            font-size: 20px;
             margin-bottom: 226px;
         }
     }
