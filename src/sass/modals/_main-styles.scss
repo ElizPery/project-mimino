@@ -135,6 +135,10 @@
 
     appearance: none;
 
+    &::placeholder {
+        color: #808080;
+    }
+
     @include for-tablet-landscape-up {
         width: 288px;
     }
