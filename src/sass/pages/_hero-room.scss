@@ -2,6 +2,7 @@
   &__container {
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
     @include for-phone-only {
       width: 100%;
       height: auto;

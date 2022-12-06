@@ -15,8 +15,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiperHero = new Swiper('.swiper-hero', {
-  effect: 'fade',
-  navigation: {
+    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
