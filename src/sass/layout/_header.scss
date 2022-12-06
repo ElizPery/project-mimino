@@ -111,6 +111,12 @@
         &--space {
             margin-left: 16px;
         }
+
+        @include for-tablet-landscape-up {
+            display: inline-block;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
     }
 
 
