@@ -2,6 +2,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1000;
 
     max-width: 414px;
     width: 100%;
@@ -9,12 +10,10 @@
     background: $bgrColorLemon;
 
     @include for-tablet-landscape-up {
-        height: 522px;
         max-width: 712px;
         height: 489px;
     }
 
-    height: 100%;
     overflow: auto;
 
     transform: translate(-50%, -50%) scale(1);

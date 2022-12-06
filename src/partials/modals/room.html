@@ -1,59 +1,56 @@
-<div class="backdrop is-hidden" data-modal-room data-modal-room-1>
+<div data-modal class="backdrop is-hidden" data-modal-room data-modal-room-1>
     <div class="modal-room">
-        <button type="button" class="modal__close-button" data-modal-room-close>
-            <svg width="24" height="24">
+        <button class="button-close" type="button" data-modal-room-close>
+            <svg class="button-close__icon" width="24 " height="24">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
-        <form class="form-room">
-            <h2 class="form__title">Забронювати номер</h2>
-            <div class="form__container">
-                <label class="form__label">
-                    <input required type="text" title="Вкажіть ім'я для броні" pattern="([a-zA-Zа-яА-Я]+)"
-                        placeholder="Ваше ім'я" class="form-room__input" />
-                    На кого забронювати номер?
-                </label>
-                <label class="form__label">
-                    <input required type="tel" title="+380xxxxxxxxx" placeholder="+38 (___) ___-__-__"
-                        pattern="([+][0-9\+]{12})" class="form-room__input" />
-                    Номер телефону
-                </label>
-            </div>
-            <div class="form__container">
-                <label class="form__label form__label--select">
-                    <select name="room" class="form-room__input">
-                        <option value="Двохмісний номер">Двохмісний номер</option>
-                        <option value="Троьхмісний номер">Троьхмісний номер</option>
-                        <option value="Двомісний люкс" selected>Двомісний люкс</option>
-                    </select>
-                    Категорія номеру
-                </label>
-            </div>
-            <div class="form__container">
-                <label class="form__label form__label--select">
-                    <select name="date" class="form-room__input">
-                        <option value="06.12" selected>Сьогодні</option>
-                        <option value="07.12">07.12.2022</option>
-                        <option value="08.12">08.12.2022</option>
-                        <option value="09.12">09.12.2022</option>
-                        <option value="09.12">10.12.2022</option>
-                        <option value="09.12">11.12.2022</option>
-                    </select>
-                    Дата заїзду
-                </label>
-                <label class="form__label form__label--select">
-                    <select name="date" class="form-room__input">
-                        <option value="06.12" selected>Сьогодні</option>
-                        <option value="07.12">07.12.2022</option>
-                        <option value="08.12">08.12.2022</option>
-                        <option value="09.12">09.12.2022</option>
-                        <option value="09.12">10.12.2022</option>
-                        <option value="09.12">11.12.2022</option>
-                    </select>
-                    Дата виїзду
-                </label>
-            </div>
-            <button type="submit" class="form-btn">Оформити бронювання</button>
-        </form>
+        <div class="modal-form">
+            <h2 class="modal-form__caption">Забронювати номер</h2>
+            <form class="menu-form-room">
+                <div class="form-box-room">
+                    <div class="menu-form__set form-box--space">
+                        <input class="menu-form__input" placeholder="Ваше ім’я" type="text" name="name" id="name" pattern="([a-zA-Zа-яА-Я]+)">
+                        <label class="menu-form__label" for="name">На кого забронювати номер?</label>
+                    </div>
+                    <div class="menu-form__set">
+                        <input required class="menu-form__input" pattern="([+][0-9\+]{12})"
+                            placeholder="+38 (___) ___-__-__" type="tel" name="phone" id="tel" />
+                        <label class="menu-form__label" for="name" for="tel">Номер телефону</label>
+                    </div>
+                </div>
+                <div class="form-box-room form-box-room--right">
+                    <div class="menu-form__set">
+                        <select class="menu-form__input" id="type-room" name="type-room">
+                            <option value="Двохмісний номер">Двохмісний номер</option>
+                            <option value="Троьхмісний номер">Троьхмісний номер</option>
+                            <option value="Двомісний люкс" selected>Двомісний люкс</option>
+                        </select>
+                        <label class="menu-form__select" for="type-room">Категорія номеру</label>
+                    </div>
+                </div>
+                <div class="form-box-room">
+                    <div class="menu-form__set form-box--space">
+                        <select class="menu-form__input" id="date-arrive" name="date-arrive">
+                            <option value="06.12" selected>Сьогодні</option>
+                            <option value="07.12">07.12.2022</option>
+                            <option value="08.12">08.12.2022</option>
+                            <option value="09.12">09.12.2022</option>
+                        </select>
+                        <label class="menu-form__select" for="date-arrive">Дата заїзду</label>
+                    </div>
+                    <div class="menu-form__set">
+                        <select class="menu-form__input" id="date-leave" name="date-leave">
+                            <option value="06.12" selected>Сьогодні</option>
+                            <option value="07.12">07.12.2022</option>
+                            <option value="08.12">08.12.2022</option>
+                            <option value="09.12">09.12.2022</option>
+                        </select>
+                        <label class="menu-form__select" for="date-leave">Дата виїзду</label>
+                    </div>
+                </div>
+            </form>
+            <button class="form-btn" type="submit">Оформити бронювання</button>
+        </div>
     </div>
 </div>
