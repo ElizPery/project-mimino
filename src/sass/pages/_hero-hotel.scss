@@ -1,0 +1,36 @@
+.hero {
+    &__subtitle-hotel {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: $primaryWhite;
+
+        margin-bottom: 178px;
+
+        @include for-tablet-landscape-up {
+            margin-bottom: 226px;
+        }
+    }
+
+    &__title-hotel {
+        font-family: "Film P3";
+        font-size: 96px;
+        line-height: 1.073;
+        letter-spacing: 0.3em;
+
+        color: $primaryWhite;
+        margin-bottom: 32px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 303px;
+
+        @include for-tablet-landscape-up {
+            padding-top: 188px;
+            margin-top: 0;
+        }
+    }
+}
