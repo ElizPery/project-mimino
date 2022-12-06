@@ -31,3 +31,23 @@
         }
     }
 }
+
+.hero-restaurant__link-menu {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid $primaryWhite;
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: $accentColor;
+    @include light-btn-hover;
+
+    padding: 14px 30px;
+}
