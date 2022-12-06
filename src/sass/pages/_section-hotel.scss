@@ -94,6 +94,20 @@
     background-color: $bgrColorDarkLemon;
 }
 
+.room-short-desc {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-tablet-landscape-up {
+        width: 1024px;
+    }
+    
+    @include for-desktop-up {
+        width: 1280px;
+    }
+}
+
 .room-short-desc__label {
     @include label;
     margin-bottom: 32px;

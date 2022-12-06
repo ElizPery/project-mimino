@@ -5,6 +5,17 @@
 .contacts-page {
     position: relative;
     background-color: $bgrColorLemon;
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-tablet-landscape-up {
+        width: 1024px;
+    }
+
+    @include for-desktop-up {
+        width: 1280px;
+    }
 
     @media screen and (max-width: 1023px) {
         padding-bottom: 32px;

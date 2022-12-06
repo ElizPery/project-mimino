@@ -1,0 +1,33 @@
+.hero-restaurant {
+    background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)),
+        url(../images/restaurant/hero-restaurant-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/restaurant/hero-restaurant-mobile@2x.jpg);
+    }
+
+    background-repeat: no-repeat;
+
+    @include for-tablet-landscape-up {
+        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/restaurant/hero-restaurant-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/restaurant/hero-restaurant-tablet@2x.jpg);
+        }
+    }
+
+
+    @include for-desktop-up {
+        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/restaurant/hero-restaurant-desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/restaurant/hero-restaurant-desktop@2x.jpg);
+        }
+    }
+}
