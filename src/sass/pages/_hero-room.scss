@@ -1,0 +1,147 @@
+.hero-room {
+}
+
+.hero-room__swiper {
+  position: relative;
+  margin: 0 auto;
+  @include for-phone-only {
+    width: 100%;
+    height: auto;
+  }
+
+  @include for-tablet-portrait-up {
+    width: 414px;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 1024px;
+  }
+
+  @include for-desktop-up {
+    width: 1280px;
+  }
+}
+
+.hero-room__image {
+  @include img;
+}
+
+.hero-room__slide {
+}
+
+.hero-room__title {
+  position: absolute;
+  left: 15px;
+  bottom: 193px;
+  z-index: 2;
+  width: 325px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-room__description {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  bottom: 118px;
+  width: 325px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-room__icon {
+  fill: currentColor;
+}
+
+.hero-room__social {
+  position: absolute;
+  z-index: 2;
+  color: rgba(243, 198, 83, 0.7);
+  text-decoration: none;
+
+  &--instagram {
+    left: 15px;
+    bottom: 78px;
+  }
+
+  &--facebook {
+    left: 15px;
+    bottom: 46px;
+  }
+
+  &--telegram {
+    left: 15px;
+    bottom: 14px;
+  }
+}
+
+.hero-room__address {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  right: 15px;
+  width: 210px;
+  height: 47px;
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.hero-room__address-link {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+.hero-room__address-icon {
+  width: 20px;
+  height: auto;
+  fill: #f3c653;
+}
+
+.hero-room__price-button {
+  position: absolute;
+  z-index: 2;
+  left: 109px;
+  bottom: 40px;
+  padding: 14px 35px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.hero-room__button {
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.hero-room__prev-button {
+  left: 15px;
+  bottom: 350px;
+}
+
+.hero-room__next-button {
+  right: 15px;
+  bottom: 350px;
+}
