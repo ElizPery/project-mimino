@@ -5,8 +5,24 @@
 @import './base/base';
 @import './base/typography';
 
+@import '../../node_modules/swiper/swiper.scss';
+
 @import './components/buttons';
 @import './layout/container';
+@import './layout/footer';
 @import './layout/header';
+@import './layout/hero-main';
 @import './layout/navigation';
-@import './pages/home';
+@import './modals/price';
+@import './modals/room';
+@import './modals/table';
+@import './pages/about-hotel';
+@import './pages/about-kitchen';
+@import './pages/about-restaurant';
+@import './pages/hero-first';
+@import './pages/hero-hotel';
+@import './pages/section-amenities';
+@import './pages/section-contacts';
+@import './pages/section-hotel';
+@import './pages/table-restaurant';
+@import './pages/about-hotel';

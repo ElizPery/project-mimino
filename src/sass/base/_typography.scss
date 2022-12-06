@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "FilmP3";
+    font-family: "Film P3";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: 
-        local("FilmP3"),
+        local("Film P3"),
         url("../fonts/film-p3-bold.woff2") format("woff2"),
         url("../fonts/film-p3-bold.woff") format("woff");
 }
@@ -54,23 +54,23 @@
 }
 
 @font-face {
-    font-family: "TimesNewRoman";
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src:
-        local("TimesNewRoman"),
+        local("Times New Roman"),
         url("../fonts/times-new-roman-normal.woff2") format("woff2"),
         url("../fonts/times-new-roman-normal.woff") format("woff");
 }
 
 @font-face {
-    font-family: "TimesNewRoman";
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src:
-        local("TimesNewRoman"),
+        local("Times New Roman"),
         url("../fonts/times-new-roman-bold.woff2") format("woff2"),
         url("../fonts/times-new-roman-bold.woff") format("woff");
 }

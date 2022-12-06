@@ -1,0 +1,207 @@
+.hero {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    // z-index: 0;
+    max-width: 1600px;
+    height: 740px;
+    background-color: $colorFooter;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+    @include for-tablet-landscape-up {
+        height: 720px;
+    }
+
+
+    &__box {
+        position: relative;
+        height: 740px;
+
+        @media screen and (max-width: 1023px) {
+            padding-top: 64px;
+        }
+
+        @include for-tablet-landscape-up {
+            height: 720px;
+            padding-top: 0;
+        }
+    }
+
+    &__location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        width: 210px;
+        height: 47px;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+
+        @include for-phone-only {
+            margin-bottom: 70px;
+            margin-right: 0px;
+        }
+
+
+        @include for-tablet-landscape-up {
+            position: absolute;
+            width: 285px;
+            height: 56px;
+            bottom: 64px;
+            left: 15px;
+        }
+    }
+
+    &__icon {
+        margin: 13px 8px 14px 6px;
+        fill: $accentColor;
+        width: 20px;
+        height: 20px;
+
+        @include for-tablet-landscape-up {
+            height: 24px;
+            width: 24px;
+            margin: 16px 10px;
+        }
+    }
+
+    &__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        width: 179px;
+
+        color: #E5E5E5;
+        text-decoration: none;
+
+        @include for-tablet-landscape-up {
+            font-size: 16px;
+            width: 233px;
+        }
+    }
+
+
+    &__title {
+        font-family: "Film P3";
+        font-size: 96px;
+        line-height: 1.073;
+        letter-spacing: 0.3em;
+
+        color: $primaryWhite;
+        margin-bottom: 24px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 303px;
+
+        @include for-tablet-landscape-up {
+            padding-top: 188px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: $primaryWhite;
+
+        margin-bottom: 40px;
+
+        @include for-tablet-landscape-up {
+            font-size: 20px;
+            margin-bottom: 56px;
+        }
+    }
+
+    &__item {
+        font-family: 'TimesNewRoman';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.156;
+        letter-spacing: 0.05em;
+
+        color: $primaryWhite;
+        margin-bottom: 113px;
+
+        @include for-tablet-landscape-up {
+            margin-bottom: 184px;
+        }
+
+    }
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid $primaryWhite;
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: $accentColor;
+
+    padding: 15px 24px 13px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 24px;
+    }
+
+    @include for-tablet-landscape-up {
+        margin-right: 40px;
+    }
+
+    &--left {
+        @include for-tablet-landscape-up {
+            margin-left: 400px;
+        }
+
+        @include for-desktop-up {
+            margin-left: 580px;
+        }
+    }
+}
+
+
+.button--moved {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+
+
+.social-hero {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+
+    @include for-desktop-up {
+        display: none;
+    }
+
+    &__icon {
+        fill: rgba(243, 198, 83, 0.7);
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        list-style: none;
+
+    }
+}
