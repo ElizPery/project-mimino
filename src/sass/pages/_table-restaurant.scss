@@ -5,59 +5,58 @@ td {
 
 .restaurant-menu {
   background: $bgrColorDarkLemon;
-}
-
-.restaurant-menu__lines {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  &__lines {
+      padding-top: 32px;
+      padding-bottom: 32px;
   
-  @include for-tablet-landscape-up {
-      padding-top: 58px;
-      padding-bottom: 40px;
-  }
+      @include for-tablet-landscape-up {
+        padding-top: 58px;
+        padding-bottom: 40px;
+      }
   
-  @include for-desktop-up {
-    padding-bottom: 60px;
-    background-image: linear-gradient(to right,
-    $bgrColorDarkLemon 23.51%,
-    rgba(186, 186, 186, 0.4) 23.51%,
-    rgba(186, 186, 186, 0.4) 23.59%,
-    $bgrColorDarkLemon 23.59%,
-    $bgrColorDarkLemon 50%,
-    rgba(186, 186, 186, 0.4) 50%,
-    rgba(186, 186, 186, 0.4) 50.09%,
-    $bgrColorDarkLemon 50.09%,
-    $bgrColorDarkLemon 76.4%,
-    rgba(186, 186, 186, 0.4) 76.4%,
-    rgba(186, 186, 186, 0.4) 76.49%,
-    $bgrColorDarkLemon 76.49%);
+      @include for-desktop-up {
+        padding-bottom: 60px;
+        background-image: linear-gradient(to right,
+            $bgrColorDarkLemon 23.51%,
+            rgba(186, 186, 186, 0.4) 23.51%,
+            rgba(186, 186, 186, 0.4) 23.59%,
+            $bgrColorDarkLemon 23.59%,
+            $bgrColorDarkLemon 50%,
+            rgba(186, 186, 186, 0.4) 50%,
+            rgba(186, 186, 186, 0.4) 50.09%,
+            $bgrColorDarkLemon 50.09%,
+            $bgrColorDarkLemon 76.4%,
+            rgba(186, 186, 186, 0.4) 76.4%,
+            rgba(186, 186, 186, 0.4) 76.49%,
+            $bgrColorDarkLemon 76.49%);
+      }
+    }
+  
+  &__caption {
+    margin-bottom: 32px;
+    font-family: 'TimesNewRoman';
+    text-transform: uppercase;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.16;
+    color: $primaryBlack;
+
+    @include for-tablet-landscape-up {
+      margin-bottom: 40px;
+    }
   }
-}
 
-.restaurant-menu__caption {
-  margin-bottom: 32px;
-  font-family: 'TimesNewRoman';
-  text-transform: uppercase;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.16;
-  color: $primaryBlack;
-
-  @include for-tablet-landscape-up {
-    margin-bottom: 40px;
-  }
-}
-
-.restaurant-menu__box {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  @include for-tablet-landscape-up {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include for-tablet-landscape-up {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -84,6 +83,53 @@ td {
   @include for-desktop-up {
     max-width: 485px;
   }
+
+  &__name-food {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    padding-bottom: 4px;
+
+    @include for-desktop-up {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__weight-food {
+    width: 20%;
+    font-weight: 300;
+    font-size: 14px;
+
+    line-height: 1.21;
+  }
+
+  &__price-food {
+    width: 20%;
+    font-weight: 700;
+    line-height: 1.21;
+    font-size: 14px;
+
+    @include for-desktop-up {
+      font-size: 16px;
+    }
+  }
+
+  &__composition-food {
+    padding-bottom: 8px;
+
+    font-size: 10px;
+    line-height: 1.2;
+
+    @include for-desktop-up {
+      padding-bottom: 12px;
+    }
+
+    &.dropping {
+      padding: 0;
+    }
+  }
 }
 
 .menu-caption {
@@ -105,19 +151,6 @@ td {
   }
 }
 
-.menu__name-food {
-  width: 60%;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.21;
-  padding-bottom: 4px;
-
-  @include for-desktop-up {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-
 .drink,
 .dessert {
   padding-bottom: 11px;
@@ -129,38 +162,4 @@ td {
 
 .dropping {
   padding: 0;
-}
-
-.menu__weight-food {
-  width: 20%;
-  font-weight: 300;
-  font-size: 14px;
-
-  line-height: 1.21;
-}
-
-.menu__price-food {
-  width: 20%;
-  font-weight: 700;
-  line-height: 1.21;
-  font-size: 14px;
-
-  @include for-desktop-up {
-    font-size: 16px;
-  }
-}
-
-.menu__composition-food {
-  padding-bottom: 8px;
-
-  font-size: 10px;
-  line-height: 1.2;
-
-  @include for-desktop-up {
-    padding-bottom: 12px;
-  }
-
-  &.dropping {
-    padding: 0;
-  }
 }

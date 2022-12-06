@@ -1,97 +1,138 @@
-.hotel-rooms__lemon {
-    @include for-tablet-landscape-up {
-        position: relative;
+.hotel {
+    &__room-lemon-line {
+    
+        @include for-phone-only {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        @include for-tablet-portrait-up {
+            padding-top: 66px;
+            padding-bottom: 40px;
+        }
+
+        @include for-desktop-up {
+            padding-top: 72px;
+            padding-bottom: 50px;
+
+            background-image: linear-gradient(to right,
+                    $bgrColorLemon 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.59%,
+                    $bgrColorLemon 23.59%,
+                    $bgrColorLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.09%,
+                    $bgrColorLemon 50.09%,
+                    $bgrColorLemon 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.49%,
+                    $bgrColorLemon 76.49%);
+        }
     }
 
-    background-color:$bgrColorLemon;
+    &__room-darklemon-line {
+        @include for-phone-only {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        @include for-tablet-portrait-up {
+            padding-top: 66px;
+            padding-bottom: 40px;
+        }
+
+        @include for-desktop-up {
+
+            background-image: linear-gradient(to right,
+                    $bgrColorDarkLemon 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.59%,
+                    $bgrColorDarkLemon 23.59%,
+                    $bgrColorDarkLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.09%,
+                    $bgrColorDarkLemon 50.09%,
+                    $bgrColorDarkLemon 74.43%,
+                    rgba(186, 186, 186, 0.4) 74.43%,
+                    rgba(186, 186, 186, 0.4) 74.52%,
+                    $bgrColorDarkLemon 74.52%);
+        }
+    }
+
+    &__room-lemon-line--tablet {
+        @include for-tablet-landscape-up {
+            background-image: linear-gradient(to right,
+                    $bgrColorLemon 25.57%,
+                    rgba(186, 186, 186, 0.4) 25.57%,
+                    rgba(186, 186, 186, 0.4) 25.67%,
+                    $bgrColorLemon 25.67%,
+                    $bgrColorLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.1%,
+                    $bgrColorLemon 50.1%,
+                    $bgrColorLemon 74.43%,
+                    rgba(186, 186, 186, 0.4) 74.43%,
+                    rgba(186, 186, 186, 0.4) 74.52%,
+                    $bgrColorLemon 74.52%);
+        }
+    }
+
+    &__img-lemon {
+        @include drop-shadow;
+        @include img;
+        margin-left: auto;
+        margin-bottom: 32px;
+
+        @include for-tablet-landscape-up {
+            position: absolute;
+            top: -32px;
+            right: 112px;
+        }
+
+        @include for-desktop-up {
+            position: absolute;
+            top: -32px;
+            right: 180px;
+        }
+    }
+
+    &__img-darklemon {
+        @include drop-shadow;
+        @include img;
+        margin-right: auto;
+        margin-bottom: 32px;
+
+        @include for-tablet-landscape-up {
+            position: absolute;
+            top: -32px;
+            left: 112px;
+        }
+
+        @include for-desktop-up {
+            position: absolute;
+            top: -32px;
+            left: 180px;
+        }
+    }
 }
 
-.hotel__room-lemon-line {
+.hotel-rooms {
+    &__lemon {
+        @include for-tablet-landscape-up {
+            position: relative;
+        }
 
-    @include for-phone-only {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        background-color:$bgrColorLemon;
     }
 
-    @include for-tablet-portrait-up {
-        padding-top: 66px;
-        padding-bottom: 40px;
+    &__darklemon {
+        @include for-tablet-landscape-up {
+            position: relative;
+        }
+
+        background-color: $bgrColorDarkLemon;
     }
-
-    @include for-desktop-up {
-        padding-top: 72px;
-        padding-bottom: 50px;
-
-        background-image: linear-gradient(to right,
-                $bgrColorLemon 23.51%,
-                rgba(186, 186, 186, 0.4) 23.51%,
-                rgba(186, 186, 186, 0.4) 23.59%,
-                $bgrColorLemon 23.59%,
-                $bgrColorLemon 50%,
-                rgba(186, 186, 186, 0.4) 50%,
-                rgba(186, 186, 186, 0.4) 50.09%,
-                $bgrColorLemon 50.09%,
-                $bgrColorLemon 76.4%,
-                rgba(186, 186, 186, 0.4) 76.4%,
-                rgba(186, 186, 186, 0.4) 76.49%,
-                $bgrColorLemon 76.49%);
-    }
-}
-
-.hotel__room-darklemon-line {
-    @include for-phone-only {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-
-    @include for-tablet-portrait-up {
-        padding-top: 66px;
-        padding-bottom: 40px;
-    }
-
-    @include for-desktop-up {
-
-        background-image: linear-gradient(to right,
-                $bgrColorDarkLemon 23.51%,
-                rgba(186, 186, 186, 0.4) 23.51%,
-                rgba(186, 186, 186, 0.4) 23.59%,
-                $bgrColorDarkLemon 23.59%,
-                $bgrColorDarkLemon 50%,
-                rgba(186, 186, 186, 0.4) 50%,
-                rgba(186, 186, 186, 0.4) 50.09%,
-                $bgrColorDarkLemon 50.09%,
-                $bgrColorDarkLemon 74.43%,
-                rgba(186, 186, 186, 0.4) 74.43%,
-                rgba(186, 186, 186, 0.4) 74.52%,
-                $bgrColorDarkLemon 74.52%);
-    }
-}
-
-.hotel__room-lemon-line--tablet {
-    @include for-tablet-landscape-up {
-        background-image: linear-gradient(to right,
-                $bgrColorLemon 25.57%,
-                rgba(186, 186, 186, 0.4) 25.57%,
-                rgba(186, 186, 186, 0.4) 25.67%,
-                $bgrColorLemon 25.67%,
-                $bgrColorLemon 50%,
-                rgba(186, 186, 186, 0.4) 50%,
-                rgba(186, 186, 186, 0.4) 50.1%,
-                $bgrColorLemon 50.1%,
-                $bgrColorLemon 74.43%,
-                rgba(186, 186, 186, 0.4) 74.43%,
-                rgba(186, 186, 186, 0.4) 74.52%,
-                $bgrColorLemon 74.52%);
-    }
-}
-
-
-.hotel-rooms__darklemon {
-    @include for-tablet-landscape-up {
-        position: relative;
-    }
-
-    background-color: $bgrColorDarkLemon;
 }
 
 .room-short-desc {
@@ -106,327 +147,313 @@
     @include for-desktop-up {
         width: 1280px;
     }
-}
 
-.room-short-desc__label {
-    @include label;
-    margin-bottom: 32px;
+    &__label {
+        @include label;
+        margin-bottom: 32px;
 
-    @include for-tablet-landscape-up {
-        margin-bottom: 62px;
+        @include for-tablet-landscape-up {
+            margin-bottom: 62px;
+        }
+
+        @include for-desktop-up {
+            margin-bottom: 72px;
+        }
     }
 
-    @include for-desktop-up {
-        margin-bottom: 72px;
-    }
-}
-
-.room-short-desc__title {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-
-    @include for-phone-only {
-        margin-bottom: 8px;
-    }
-
-    @include for-tablet-portrait-up {
-        font-size: 32px;
+    &__title {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
         line-height: 1.15;
-        margin-bottom: 0px;
+
+        @include for-phone-only {
+            margin-bottom: 8px;
+        }
+
+        @include for-tablet-portrait-up {
+            font-size: 32px;
+            line-height: 1.15;
+            margin-bottom: 0px;
+        }
+
+        @include for-desktop-up {
+            margin-bottom: 4px;
+        }
+
+        color: $thirdTextColor;
     }
 
-    @include for-desktop-up {
-        margin-bottom: 4px;
+    &__name {
+        font-family: 'TimesNewRoman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        margin-bottom: 12px;
+
+        @include for-tablet-landscape-up {
+            font-size: 30px;
+            line-height: 1.13;
+            margin-bottom: 16px;
+        }
+
+        @include for-desktop-up {
+            margin-bottom: 24px;
+        }
+
+        color: $primaryBlack;
     }
 
-    color: $thirdTextColor;
-}
+    &__name-down {
+        text-transform: lowercase;
+    }
 
-.room-short-desc__name {
-    font-family: 'TimesNewRoman';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    &__about {
+        font-family: 'Montserrat';
+        width: 258px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
 
-    margin-bottom: 12px;
+        color: $primaryTextColor;
 
-    @include for-tablet-landscape-up {
-        font-size: 30px;
-        line-height: 1.13;
+        @include for-tablet-landscape-up {
+            font-size: 16px;
+            line-height: 1.25;
+            width: 439px;
+            margin-bottom: 176px;
+        }
+
+        @include for-desktop-up {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            width: 439px;
+            margin-bottom: 188px;
+        }
+    }
+
+    &__about-lemon {
+        font-family: 'Montserrat';
+        width: 258px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+
+        color: $secondaryTextColor;
+
+        @include for-tablet-landscape-up {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            width: 400px;
+            margin-bottom: 176px;
+        }
+
+        @include for-desktop-up {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            width: 439px;
+            margin-bottom: 188px;
+        }
+    }
+
+    &__button-box:not(:last-child) {
         margin-bottom: 16px;
     }
 
-    @include for-desktop-up {
-        margin-bottom: 24px;
-    }
-
-    color: $primaryBlack;
-}
-
-.room-short-desc__name-down {
-    text-transform: lowercase;
-}
-
-.room-short-desc__about {
-    font-family: 'Montserrat';
-    width: 258px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px;
-
-    color: $primaryTextColor;
-
-    @include for-tablet-landscape-up {
-        font-size: 16px;
-        line-height: 1.25;
-        width: 439px;
-        margin-bottom: 176px;
-    }
-
-    @include for-desktop-up {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        width: 439px;
-        margin-bottom: 188px;
-    }
-}
-
-.room-short-desc__about-lemon {
-    font-family: 'Montserrat';
-    width: 258px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px;
-
-    color: $secondaryTextColor;
-
-    @include for-tablet-landscape-up {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        width: 400px;
-        margin-bottom: 176px;
-    }
-
-    @include for-desktop-up {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        width: 439px;
-        margin-bottom: 188px;
-    }
-}
-
-.hotel__img-lemon {
-    @include drop-shadow;
-    @include img;
-    margin-left: auto;
-    margin-bottom: 32px;
-
-    @include for-tablet-landscape-up {
-        position: absolute;
-        top: -32px;
-        right: 112px;
-    }
-
-    @include for-desktop-up {
-        position: absolute;
-        top: -32px;
-        right: 180px;
-    }
-}
-
-.hotel__img-darklemon {
-    @include drop-shadow;
-    @include img;
-    margin-right: auto;
-    margin-bottom: 32px;
-
-    @include for-tablet-landscape-up {
-        position: absolute;
-        top: -32px;
-        left: 112px;
-    }
-
-    @include for-desktop-up {
-        position: absolute;
-        top: -32px;
-        left: 180px;
-    }
-}
-
-.room-short-desc__button-box:not(:last-child) {
-    margin-bottom: 16px;
-}
-
-.room-short-desc__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.slader__box {
-    display: flex;
-    flex-direction: column;
-}
-
-.slader__list-right {
-    display: flex;
-    gap: 16px;
-    margin-left: -120px;
-
-    @include for-tablet-landscape-up {
-        margin: initial;
-        gap: 40px;
-    }
-}
-
-.slader__list-left {
-    display: flex;
-    gap: 16px;
-
-    @include for-tablet-landscape-up {
-        gap: 40px;
-    }
-}
-
-.swiper__slide {
-    @include drop-shadow;
-    margin-bottom: 12px;
-    width: 194px;
-
-    @include for-tablet-portrait-up {
-        width: 194px;
-        margin-bottom: 20px;
-    }
-
-    @include for-tablet-landscape-up {
-        width: 194px;
-    }
-
-    @include for-desktop-up {
-        width: 254px;
-    }
-}
-
-.set__container {
-
-    @include for-tablet-landscape-up {
-        width: 428px;
-    }
-
-    @include for-desktop-up {
-        width: 550px;
-    }
-
-    &-left {
-        margin-left: 100px;
-    }
-
-    &-right {
-        margin-right: 100px;
-    }
-}
-
-.swiper__position {
-    display: flex;
-    flex-direction: column;
-}
-
-.set__images-lemon {
-    @include for-desktop-up {
-        @include between;
-    }
-
-    @include for-tablet-landscape-up {
-        @include between;
-    }
-}
-
-.set__images-darklemon {
-    @include for-desktop-up {
-        @include between;
-    }
-
-    @include for-tablet-landscape-up {
-        @include between;
-        flex-direction: row-reverse;
-    }
-}
-
-.room-short-desc__button {
-    width: 236px;
-    height: 48px;
-
-    background-color: $primaryBlack;
-
-    border: 2px solid $primaryWhite;
-    border-radius: 25px;
-
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-
-    color: $accentColor;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        @include hover-focus-button
-    }
-}
-
-.room-short-desc__link {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-
-    color: $accentColor;
-    text-decoration: none;
-}
-
-.swiper__button-lemon {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: flex-start;
-    gap: 32px;
-
-    @include for-tablet-landscape-up {
+    &__info {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
+    &__button {
+        width: 236px;
+        height: 48px;
+
+        background-color: $primaryBlack;
+
+        border: 2px solid $primaryWhite;
+        border-radius: 25px;
+
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: $accentColor;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            @include hover-focus-button
+        }
+    }
+
+    &__link {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: $accentColor;
+        text-decoration: none;
+    }
+
+    &__list-button {
+        @include style-list;
     }
 }
 
-.swiper__button-darklemon {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 32px;
-
-    @include for-tablet-landscape-up {
+.slader {
+    &__box {
         display: flex;
+        flex-direction: column;
+    }
+
+    &__list-right {
+        display: flex;
+        gap: 16px;
+        margin-left: -120px;
+
+        @include for-tablet-landscape-up {
+            margin: initial;
+            gap: 40px;
+        }
+    }
+
+    &__list-left {
+        display: flex;
+        gap: 16px;
+
+        @include for-tablet-landscape-up {
+            gap: 40px;
+        }
+    }
+}
+
+.set {
+    &__container {
+    
+        @include for-tablet-landscape-up {
+            width: 428px;
+        }
+
+        @include for-desktop-up {
+            width: 550px;
+        }
+
+        &-left {
+            margin-left: 100px;
+        }
+
+        &-right {
+            margin-right: 100px;
+        }
+    }
+
+    &__images-lemon {
+        @include for-desktop-up {
+            @include between;
+        }
+
+        @include for-tablet-landscape-up {
+            @include between;
+        }
+    }
+
+    &__images-darklemon {
+        @include for-desktop-up {
+            @include between;
+        }
+
+        @include for-tablet-landscape-up {
+            @include between;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.swiper {
+    &__slide {
+        @include drop-shadow;
+        margin-bottom: 12px;
+        width: 194px;
+
+        @include for-tablet-portrait-up {
+            width: 194px;
+            margin-bottom: 20px;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 194px;
+        }
+
+        @include for-desktop-up {
+            width: 254px;
+        }
+    }
+
+    &__position {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button-lemon {
+        display: flex;
+        flex-direction: row;
+
         justify-content: flex-start;
+        gap: 32px;
+
+        @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+    }
+
+    &__button-darklemon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 32px;
+
+        @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    &__button-room {
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        color: $primaryBlack;
+
+        &:hover,
+        &:active,
+        &:focus-visible {
+            color: $accentColor;
+        }
     }
 }
 
@@ -443,23 +470,5 @@
 
     @include for-tablet-landscape-up {
         margin: 0;
-    }
-}
-
-.room-short-desc__list-button {
-    @include style-list;
-}
-
-.swiper__button-room {
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: $primaryBlack;
-
-    &:hover,
-    &:active,
-    &:focus-visible {
-        color: $accentColor;
     }
 }

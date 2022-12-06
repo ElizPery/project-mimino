@@ -51,6 +51,14 @@
     border-radius: 50%;
     border: transparent;
     cursor: pointer;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        stroke: $primaryBlack;
+    }
 }
 
 .modal-form {
@@ -59,31 +67,37 @@
     @include for-tablet-landscape-up {
         padding: 60px 60px;
     }
-}
 
-.modal-form__caption {
-    margin-bottom: 40px;
+    &__caption {
+        margin-bottom: 40px;
 
-    font-family: 'TimesNewRoman';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: $primaryBlack;
-    text-transform: uppercase;
+        font-family: 'TimesNewRoman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $primaryBlack;
+        text-transform: uppercase;
 
-    @include for-tablet-landscape-up {
-        font-size: 40px;
+        @include for-tablet-landscape-up {
+            font-size: 40px;
+        }
     }
 }
 
-.button-close__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    stroke: $primaryBlack;
+.form-box {
+    @include for-tablet-landscape-up {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &--space {
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .menu-form {
@@ -96,51 +110,37 @@
         flex-wrap: wrap;
         gap: 16px;
     }
-}
 
-.form-box {
-    @include for-tablet-landscape-up {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
+    &__set {
+        position: relative;
     }
-}
 
-.form-box--space {
-    @media screen and (max-width: 1023px) {
-        margin-bottom: 20px;
-    }
-}
-
-.menu-form__set {
-    position: relative;
-}
-
-.menu-form__input {
-    width: 100%;
-    height: 54px;
-    padding: 16px 12px;
-    outline: none;
-    border: 1px solid $brownColor;
-    border-radius: 2px;
-    cursor: pointer;
-    font-family: 'TimesNewRoman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.05em;
-    color: #808080;
-    background-color: $bgrColorLemon;
-
-    appearance: none;
-
-    &::placeholder {
+    &__input {
+        width: 100%;
+        height: 54px;
+        padding: 16px 12px;
+        outline: none;
+        border: 1px solid $brownColor;
+        border-radius: 2px;
+        cursor: pointer;
+        font-family: 'TimesNewRoman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
         color: #808080;
-    }
+        background-color: $bgrColorLemon;
 
-    @include for-tablet-landscape-up {
-        width: 288px;
+        appearance: none;
+
+        &::placeholder {
+            color: #808080;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 288px;
+        }
     }
 }
 

@@ -1,7 +1,3 @@
-.contacts-page__title {
-    @include visually-hidden;
-}
-
 .contacts-page {
     position: relative;
     background-color: $bgrColorLemon;
@@ -20,287 +16,291 @@
     @media screen and (max-width: 1023px) {
         padding-bottom: 32px;
     }
-}
 
-.contacts-page__line {
-    position: relative;
-    padding-top: 36px;
-    background-image: linear-gradient(to right,
-            $bgrColorLemon 33.81%,
-            rgba(186, 186, 186, 0.4) 33.81%,
-            rgba(186, 186, 186, 0.4) 34.06%,
-            $bgrColorLemon 34.06%,
-            $bgrColorLemon 65.94%,
-            rgba(186, 186, 186, 0.4) 65.94%,
-            rgba(186, 186, 186, 0.4) 66.18%,
-            $bgrColorLemon 66.18%);
+    &__title {
+        @include visually-hidden;
+    }
 
-    @include for-tablet-landscape-up {
-        padding-top: 56px;
-        padding-bottom: 44px;
+    &__line {
+        position: relative;
+        padding-top: 36px;
         background-image: linear-gradient(to right,
-                $bgrColorLemon 25.57%,
-                rgba(186, 186, 186, 0.4) 25.57%,
-                rgba(186, 186, 186, 0.4) 25.67%,
-                $bgrColorLemon 25.67%,
-                $bgrColorLemon 50%,
-                rgba(186, 186, 186, 0.4) 50%,
-                rgba(186, 186, 186, 0.4) 50.1%,
-                $bgrColorLemon 50.1%,
-                $bgrColorLemon 74.32%,
-                rgba(186, 186, 186, 0.4) 74.32%,
-                rgba(186, 186, 186, 0.4) 74.42%,
-                $bgrColorLemon 74.42%);
+                $bgrColorLemon 33.81%,
+                rgba(186, 186, 186, 0.4) 33.81%,
+                rgba(186, 186, 186, 0.4) 34.06%,
+                $bgrColorLemon 34.06%,
+                $bgrColorLemon 65.94%,
+                rgba(186, 186, 186, 0.4) 65.94%,
+                rgba(186, 186, 186, 0.4) 66.18%,
+                $bgrColorLemon 66.18%);
+
+        @include for-tablet-landscape-up {
+            padding-top: 56px;
+            padding-bottom: 44px;
+            background-image: linear-gradient(to right,
+                    $bgrColorLemon 25.57%,
+                    rgba(186, 186, 186, 0.4) 25.57%,
+                    rgba(186, 186, 186, 0.4) 25.67%,
+                    $bgrColorLemon 25.67%,
+                    $bgrColorLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.1%,
+                    $bgrColorLemon 50.1%,
+                    $bgrColorLemon 74.32%,
+                    rgba(186, 186, 186, 0.4) 74.32%,
+                    rgba(186, 186, 186, 0.4) 74.42%,
+                    $bgrColorLemon 74.42%);
+        }
+
+        @include for-desktop-up {
+            padding-bottom: 73px;
+            background-image: linear-gradient(to right,
+                    $bgrColorLemon 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.59%,
+                    $bgrColorLemon 23.59%,
+                    $bgrColorLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.09%,
+                    $bgrColorLemon 50.09%,
+                    $bgrColorLemon 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.49%,
+                    $bgrColorLemon 76.49%);
+        }
     }
 
-    @include for-desktop-up {
-        padding-bottom: 73px;
-        background-image: linear-gradient(to right,
-                $bgrColorLemon 23.51%,
-                rgba(186, 186, 186, 0.4) 23.51%,
-                rgba(186, 186, 186, 0.4) 23.59%,
-                $bgrColorLemon 23.59%,
-                $bgrColorLemon 50%,
-                rgba(186, 186, 186, 0.4) 50%,
-                rgba(186, 186, 186, 0.4) 50.09%,
-                $bgrColorLemon 50.09%,
-                $bgrColorLemon 76.4%,
-                rgba(186, 186, 186, 0.4) 76.4%,
-                rgba(186, 186, 186, 0.4) 76.49%,
-                $bgrColorLemon 76.49%);
-    }
-}
+    &__name {
+        width: 202px;
+        font-family: "Film P3";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: $fifthTextColor;
+        margin-bottom: 12px;
 
-.contacts-page__name {
-    width: 202px;
-    font-family: "Film P3";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    color: $fifthTextColor;
-    margin-bottom: 12px;
+        @include for-tablet-landscape-up {
+            font-size: 64px;
+        }
 
-    @include for-tablet-landscape-up {
-        font-size: 64px;
+        @include for-desktop-up {
+            color: $fourthTextColor;
+        }
     }
 
-    @include for-desktop-up {
-        color: $fourthTextColor;
-    }
-}
+    &__name-description {
+        font-family: "Montserrat" sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: $primaryTextColor;
+        margin-bottom: 16px;
 
-.contacts-page__name-description {
-    font-family: "Montserrat" sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: $primaryTextColor;
-    margin-bottom: 16px;
-
-    @include for-tablet-landscape-up {
-        margin-bottom: 52px;
-    }
-}
-
-.contacts-page__location {
-    margin-right: 22px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: $brownColor;
-
-    @include for-tablet-landscape-up {
-        margin-right: 0;
-    }
-}
-
-.contacts-page__location-hotel {
-    margin-right: 55px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: $brownColor;
-
-
-    @include for-tablet-landscape-up {
-        margin-right: 0;
-    }
-}
-
-.contacts-page__tel {
-    display: flex;
-    text-decoration: none;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.02em;
-    color: $fifthTextColor;
-    flex-wrap: nowrap;
-}
-
-.contacts-page__tel:last-child {
-    margin-right: 8px;
-}
-
-.contacts-page__contacts-aria-tel {
-    display: flex;
-    align-items: center;
-    border-width: 0.5px;
-    border-style: solid;
-    border-color: $accentColor;
-    border-radius: 2px;
-    background-color: $primaryWhite;
-    padding-top: 9px;
-    padding-bottom: 7px;
-    gap: 8px;
-
-    @media (max-width:414px) {
-        flex-wrap: wrap;
-    }
-}
-
-.contacts-page__map {
-    border: 1px solid #BABABA;
-    border-radius: 2px;
-
-    @include for-phone-only {
-        width: 100%;
-        height: 220px;
+        @include for-tablet-landscape-up {
+            margin-bottom: 52px;
+        }
     }
 
-    @include for-tablet-portrait-up {
-        width: 384px;
-        height: 220px;
+    &__location {
+        margin-right: 22px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: $brownColor;
+
+        @include for-tablet-landscape-up {
+            margin-right: 0;
+        }
     }
 
-    @include for-tablet-landscape-up {
-        width: 535px;
-        height: 412px;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    &__location-hotel {
+        margin-right: 55px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: $brownColor;
+
+
+        @include for-tablet-landscape-up {
+            margin-right: 0;
+        }
     }
 
-    @include for-desktop-up {
-        width: 634px;
-        height: 412px;
-    }
-}
-
-.contacts-page__restaurant {
-
-
-    position: relative;
-    align-items: center;
-    margin-bottom: 16px;
-
-    @include for-tablet-portrait-up {
+    &__tel {
         display: flex;
-    }
-
-    @include for-tablet-landscape-up {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-}
-
-.contacts-page__hotel {
-    position: relative;
-    align-items: center;
-    margin-bottom: 16px;
-
-    @include for-tablet-portrait-up {
-        display: flex;
-    }
-
-    @include for-tablet-landscape-up {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        margin-bottom: 48px;
-    }
-}
-
-.contacts-page__address {
-    margin-left: auto;
-    width: 260px;
-    display: flex;
-    align-items: center;
-    border-width: 0.5px;
-    border-style: solid;
-    border-color: $accentColor;
-    border-radius: 2px;
-    background-color: $primaryWhite;
-    gap: 10px;
-
-    @media (max-width:412px) {
-        width: 100%;
-    }
-
-    @include for-tablet-landscape-up {
-        width: 285px;
-        margin-left: 0;
-        margin-right: auto;
-    }
-}
-
-.contacts-page__address-link {
-    width: 183px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-style: normal;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    color: $fifthTextColor;
-
-    @include for-tablet-landscape-up {
-        width: 235px;
+        text-decoration: none;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
         line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: $fifthTextColor;
+        flex-wrap: nowrap;
     }
-}
 
-.contacts-page__address-wrapper {
-    position: relative;
-
-    @media (max-width: 1023px) {
-        margin-bottom: 32px;
+    &__tel:last-child {
+        margin-right: 8px;
     }
-}
 
-.contacts-page__contacts-aria-icon {
-    width: 24px;
-    height: 24px;
-    fill: $brownColor;
-    margin-left: 10px;
-}
-
-.contacts-page__map-wrapper {
-    @media (max-width:1023px) {
+    &__contacts-aria-tel {
         display: flex;
-        justify-content: center;
         align-items: center;
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: $accentColor;
+        border-radius: 2px;
+        background-color: $primaryWhite;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        gap: 8px;
+
+        @media (max-width:414px) {
+            flex-wrap: wrap;
+        }
     }
 
-    @include for-tablet-landscape-up {
-        position: absolute;
-        top: 69px;
-        right: 47px;
+    &__map {
+        border: 1px solid #BABABA;
+        border-radius: 2px;
+
+        @include for-phone-only {
+            width: 100%;
+            height: 220px;
+        }
+
+        @include for-tablet-portrait-up {
+            width: 384px;
+            height: 220px;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 535px;
+            height: 412px;
+            box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        @include for-desktop-up {
+            width: 634px;
+            height: 412px;
+        }
     }
 
-    @include for-desktop-up {
-        right: 85px;
+    &__restaurant {
+
+
+        position: relative;
+        align-items: center;
+        margin-bottom: 16px;
+
+        @include for-tablet-portrait-up {
+            display: flex;
+        }
+
+        @include for-tablet-landscape-up {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+
+    &__hotel {
+        position: relative;
+        align-items: center;
+        margin-bottom: 16px;
+
+        @include for-tablet-portrait-up {
+            display: flex;
+        }
+
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__address {
+        margin-left: auto;
+        width: 260px;
+        display: flex;
+        align-items: center;
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: $accentColor;
+        border-radius: 2px;
+        background-color: $primaryWhite;
+        gap: 10px;
+
+        @media (max-width:412px) {
+            width: 100%;
+        }
+
+        @include for-tablet-landscape-up {
+            width: 285px;
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
+    &__address-link {
+        width: 183px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        color: $fifthTextColor;
+
+        @include for-tablet-landscape-up {
+            width: 235px;
+            line-height: 1.21;
+        }
+    }
+
+    &__address-wrapper {
+        position: relative;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__contacts-aria-icon {
+        width: 24px;
+        height: 24px;
+        fill: $brownColor;
+        margin-left: 10px;
+    }
+
+    &__map-wrapper {
+        @media (max-width:1023px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include for-tablet-landscape-up {
+            position: absolute;
+            top: 69px;
+            right: 47px;
+        }
+
+        @include for-desktop-up {
+            right: 85px;
+        }
     }
 }

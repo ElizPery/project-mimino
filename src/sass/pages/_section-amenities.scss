@@ -1,158 +1,217 @@
-.amenities__section {
-    background-color: $bgrColorLemon;
-}
+.amenities {
 
-.amenities__lines {
-    @include for-phone-only {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+    &__section {
+            background-color: $bgrColorLemon;
+        }
     
-    @include for-tablet-portrait-up {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    
-    @include for-tablet-landscape-up {
-        padding-top: 48px;
-        padding-bottom: 40px;
-    }
+    &__lines {
+        @include for-phone-only {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
 
-    @include for-desktop-up {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    
-        background-image: linear-gradient(to right,
-        $bgrColorLemon 23.51%,
-        rgba(186, 186, 186, 0.4) 23.51%,
-        rgba(186, 186, 186, 0.4) 23.59%,
-        $bgrColorLemon 23.59%,
-        $bgrColorLemon 50%,
-        rgba(186, 186, 186, 0.4) 50%,
-        rgba(186, 186, 186, 0.4) 50.09%,
-        $bgrColorLemon 50.09%,
-        $bgrColorLemon 76.4%,
-        rgba(186, 186, 186, 0.4) 76.4%,
-        rgba(186, 186, 186, 0.4) 76.49%,
-        $bgrColorLemon 76.49%);
-    }
-}
+        @include for-tablet-portrait-up {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
 
+        @include for-tablet-landscape-up {
+            padding-top: 48px;
+            padding-bottom: 40px;
+        }
 
-.amenities__title {
-    font-family: "Times New Roman";
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.15;
-    color: $primaryBlack;
-    text-transform: uppercase;
+        @include for-desktop-up {
+            padding-top: 48px;
+            padding-bottom: 48px;
 
-    @media (max-width:413px) {
-        text-align: center;
-        margin-bottom: 12px;
+            background-image: linear-gradient(to right,
+                    $bgrColorLemon 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.51%,
+                    rgba(186, 186, 186, 0.4) 23.59%,
+                    $bgrColorLemon 23.59%,
+                    $bgrColorLemon 50%,
+                    rgba(186, 186, 186, 0.4) 50%,
+                    rgba(186, 186, 186, 0.4) 50.09%,
+                    $bgrColorLemon 50.09%,
+                    $bgrColorLemon 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.4%,
+                    rgba(186, 186, 186, 0.4) 76.49%,
+                    $bgrColorLemon 76.49%);
+        }
     }
 
-    @media (min-width:414px) {
-        margin-bottom: 16px;
-    }
 
-}
-
-.amenities__discription {
-    font-family: 'Montserrat';
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 700;
-    color: $secondaryTextColor;
-
-    @include for-tablet-landscape-up {
-        line-height: 1.21;
-        width: 400px;
-
-    }
-
-}
-
-.amenities__subtitle {
-    font-family: "TimesNewRoman";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1;
-    color: $primaryBlack;
-    text-transform: uppercase;
-    margin-top: 32px;
-    margin-bottom: 16px;
-
-    @include for-tablet-landscape-up {
+    &__title {
+        font-family: "Times New Roman";
+        font-weight: 400;
+        font-size: 32px;
         line-height: 1.15;
+        color: $primaryBlack;
+        text-transform: uppercase;
+
+        @media (max-width:413px) {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        @media (min-width:414px) {
+            margin-bottom: 16px;
+        }
 
     }
 
-}
+    &__discription {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 700;
+        color: $secondaryTextColor;
 
-.amenities__box-second {
-    @include for-phone-only {
-        margin-top: 16px;
-    }
+        @include for-tablet-landscape-up {
+            line-height: 1.21;
+            width: 400px;
 
-    @include for-tablet-portrait-up {
-        margin-top: 16px;
-    }
-
-    @include for-tablet-landscape-up {
-
-        margin-top: 0;
+        }
 
     }
 
-
-}
-
-.amenities__button {
-    background-color: $primaryBlack;
-    color: $primaryWhite;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-
-    @include for-phone-only {
-        font-size: 14px;
-        padding: 15px 30px;
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 16px;
-        margin-top: 16px;
-    }
-
-    @include for-tablet-portrait-up {
-        width: 384px;
-        height: 64px;
-        margin-top: 32px;
-        margin-bottom: 20px;
-        padding: 20px 43px;
-    }
-
-    @include for-tablet-landscape-up {
+    &__subtitle {
+        font-family: "TimesNewRoman";
+        font-weight: 700;
         font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 32px;
-        margin-left: auto;
-        width: 434px;
-        padding: 18px 38px;
+        line-height: 1;
+        color: $primaryBlack;
+        text-transform: uppercase;
+        margin-top: 32px;
+        margin-bottom: 16px;
+
+        @include for-tablet-landscape-up {
+            line-height: 1.15;
+
+        }
+
     }
 
-    @include for-desktop-up {
-        margin-left: 563px;
+    &__box-second {
+        @include for-phone-only {
+            margin-top: 16px;
+        }
+
+        @include for-tablet-portrait-up {
+            margin-top: 16px;
+        }
+
+        @include for-tablet-landscape-up {
+
+            margin-top: 0;
+
+        }
+
+
+    }
+
+    &__button {
+        background-color: $primaryBlack;
+        color: $primaryWhite;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+
+        @include for-phone-only {
+            font-size: 14px;
+            padding: 15px 30px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        @include for-tablet-portrait-up {
+            width: 384px;
+            height: 64px;
+            margin-top: 32px;
+            margin-bottom: 20px;
+            padding: 20px 43px;
+        }
+
+        @include for-tablet-landscape-up {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 32px;
+            margin-left: auto;
+            width: 434px;
+            padding: 18px 38px;
+        }
+
+        @include for-desktop-up {
+            margin-left: 563px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: $brownColor;
+    }
+
+    &__list {
+        @include style-list
+    }
+
+    &__box {
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+        }
+
+        @include for-desktop-up {
+            gap: 159px;
+        }
+    }
+
+    &__subdiscription {
+        @extend .amenities__discription;
+
+        @include for-tablet-landscape-up {
+            width: 757px;
+        }
+    }
+
+    &__discription-additional {
+        @extend .amenities__discription;
+
+        @include for-tablet-landscape-up {
+            width: 450px;
+        }
+
+        @include for-desktop-up {
+            width: 495px;
+        }
+    }
+
+    &__box-third {
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        @include for-desktop-up {
+            gap: 64px;
+        }
     }
 }
+
 
 .link__amenities {
     text-decoration: none;
@@ -188,60 +247,5 @@
 
     @include for-desktop-up {
         margin-left: 563px;
-    }
-}
-
-.amenities__icon {
-    display: block;
-    width: 24px;
-    height: 24px;
-    fill: $brownColor;
-}
-
-.amenities__list {
-    @include style-list
-}
-
-.amenities__box {
-    @include for-tablet-landscape-up {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 80px;
-    }
-
-    @include for-desktop-up {
-        gap: 159px;
-    }
-}
-
-.amenities__subdiscription {
-    @extend .amenities__discription;
-
-    @include for-tablet-landscape-up {
-        width: 757px;
-    }
-}
-
-.amenities__discription-additional {
-    @extend .amenities__discription;
-
-    @include for-tablet-landscape-up {
-        width: 450px;
-    }
-
-    @include for-desktop-up {
-        width: 495px;
-    }
-}
-
-.amenities__box-third {
-    @include for-tablet-landscape-up {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    @include for-desktop-up {
-        gap: 64px;
     }
 }
