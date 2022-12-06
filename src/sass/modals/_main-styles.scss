@@ -51,13 +51,15 @@
     border-radius: 50%;
     border: transparent;
     cursor: pointer;
+    color: $primaryBlack;
+    @include light-text-hover;
 
     &__icon {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        stroke: $primaryBlack;
+        stroke: currentColor;
     }
 }
 
