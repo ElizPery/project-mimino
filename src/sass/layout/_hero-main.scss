@@ -1,5 +1,7 @@
 .hero {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     // z-index: 0;
     max-width: 1600px;
     height: 740px;
@@ -12,37 +14,6 @@
         height: 720px;
     }
 
-    background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)),
-    url(../images/hotel/hero-hotel-mobile.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-mobile@2x.jpg);
-    }
-
-    background-repeat: no-repeat;
-
-    @include for-tablet-landscape-up {
-        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-tablet.jpg);
-        
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-tablet@2x.jpg);
-        }
-    }
-
-
-    @include for-desktop-up {
-        background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-desktop.jpg);
-        
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(14, 15, 18, 0.4), rgba(12, 12, 14, 0.4)), url(../images/hotel/hero-hotel-desktop@2x.jpg);
-        }
-    }
 
     &__box {
         position: relative;
