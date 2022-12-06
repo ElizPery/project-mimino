@@ -1,4 +1,8 @@
 .hero-room {
+  // background-image: radial-gradient(circle at center,
+  //   #694419 33%,
+  //   $bgrColorLemon);
+  
   &__container {
     position: relative;
     margin: 0 auto;
@@ -39,7 +43,7 @@
     bottom: 193px;
     z-index: 3;
     width: 325px;
-    font-family: 'Times New Roman';
+    font-family: 'TimesNewRoman';
     font-weight: 700;
     font-size: 28px;
     line-height: 1.14;
@@ -49,7 +53,7 @@
     @include for-tablet-landscape-up {
       left: 47px;
       bottom: 211px;
-      width: 507px;
+      width: 510px;
       font-size: 36px;
     }
 
@@ -176,7 +180,7 @@
   &__address-icon {
     width: 20px;
     height: 20px;
-    fill: #f3c653;
+    fill: $accentColor;
 
     @include for-tablet-landscape-up {
       width: 24px;
@@ -195,7 +199,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #f3c653;
+    color: $accentColor;
     background-color: rgba(0, 0, 0, 0.4);
     border: 2px solid $primaryWhite;
     border-radius: 25px;

@@ -3,7 +3,7 @@
     &__container {
         margin-top: 16px;
         position: absolute;
-        z-index: 1;
+        z-index: 998;
 
         @include for-tablet-landscape-up {
             margin-top: 24px;
