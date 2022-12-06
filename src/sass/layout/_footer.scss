@@ -16,8 +16,6 @@
 
         @include for-tablet-landscape-up {
             font-size: 64px;
-
-
         }
 
     }
@@ -46,6 +44,7 @@
         font-family: 'Montserrat';
         font-weight: 500;
         letter-spacing: 0.02em;
+        @include dark-text-hover;
 
         @include for-tablet-portrait-up {
             font-size: 20px;
@@ -92,10 +91,12 @@
         height: 24px;
         justify-content: center;
         align-items: center;
+        color: rgba(243, 198, 83, 0.7);
+        @include dark-text-hover;
     }
 
     &__icon {
-        fill: $accentColor;
+        fill: currentColor;
     }
 
     &__link-network {

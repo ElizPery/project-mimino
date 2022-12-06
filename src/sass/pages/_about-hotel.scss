@@ -257,6 +257,7 @@
         cursor: pointer;
         background-color: transparent;
         color: $primaryBlack;
+        transition: color 250ms linear;
 
         &:hover,
         &:active,

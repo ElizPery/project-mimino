@@ -163,7 +163,7 @@
         display: block;
         width: 24px;
         height: 24px;
-        fill: $brownColor;
+        fill: currentColor;
     }
 
     &__list {
@@ -250,5 +250,12 @@
 
     @include for-desktop-up {
         margin-left: 563px;
+    }
+
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
     }
 }

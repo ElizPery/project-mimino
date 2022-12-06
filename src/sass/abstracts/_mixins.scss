@@ -86,3 +86,12 @@
         border: 2px solid $primaryWhite;
     }
 }
+
+@mixin dark-text-hover {
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: $brownColor;
+    }
+}
