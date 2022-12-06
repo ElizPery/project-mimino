@@ -154,6 +154,7 @@
     cursor: pointer;
 
     color: $accentColor;
+    @include light-btn-hover;
 
     padding: 15px 24px 13px;
 

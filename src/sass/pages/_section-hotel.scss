@@ -294,6 +294,7 @@
 
         color: $accentColor;
         text-decoration: none;
+        @include light-lem-btn-hover;
 
         &:hover,
         &:focus {

@@ -17,13 +17,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: background 250ms linear, color 250ms linear;
-
-    &:hover,
-    &:focus {
-        background-color: $accentColor;
-        color: $primaryBlack;
-    }
+    @include dark-btn-hover;
 }
 
 .button-menu {
@@ -43,6 +37,7 @@
 
   border: 2px solid $bgrColorLemon;
   border-radius: 25px;
+  @include light-lem-btn-hover;
 
   @include for-tablet-landscape-up {
     margin-top: 31px;

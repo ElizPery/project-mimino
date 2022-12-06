@@ -199,6 +199,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     border: 2px solid $primaryWhite;
     border-radius: 25px;
+    @include light-btn-hover;
 
     @include for-tablet-landscape-up {
       left: 745px;

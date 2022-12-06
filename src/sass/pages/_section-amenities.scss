@@ -119,10 +119,13 @@
         text-transform: uppercase;
 
         border-radius: 25px;
+        border: 1px solid $accentColor;
         display: flex;
         justify-content: center;
         align-items: center;
         white-space: nowrap;
+
+        @include dark-btn-hover;
 
         @include for-phone-only {
             font-size: 14px;
