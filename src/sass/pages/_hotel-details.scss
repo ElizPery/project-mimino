@@ -216,6 +216,10 @@
     margin-bottom: 16px;
     overflow: hidden;
 
+    @include for-phone-only {
+      width: auto;
+    }
+
     @include for-tablet-landscape-up {
       width: 662px;
       margin-bottom: 24px;
@@ -233,10 +237,20 @@
     &--narrow {
       width: 162px;
       height: 270px;
+
+      @include for-phone-only {
+        max-width: 162px;
+        height: auto;
+      }
     }
     &--square {
       width: 270px;
       height: 270px;
+
+      @include for-phone-only {
+        max-width: 270px;
+        height: auto;
+      }
     }
   }
 
