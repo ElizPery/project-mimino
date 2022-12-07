@@ -101,11 +101,13 @@ td {
     width: 20%;
     font-weight: 300;
     font-size: 14px;
+    text-align: right;
 
     line-height: 1.21;
   }
 
   &__price-food {
+    text-align: right;
     width: 20%;
     font-weight: 700;
     line-height: 1.21;

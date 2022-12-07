@@ -291,6 +291,7 @@
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.02em;
+        text-decoration: none;
 
         color: $accentColor;
         text-decoration: none;
@@ -303,10 +304,20 @@
     }
 
     &__link {
-        padding-top: 14px;
-        padding-bottom: 14px;
+        display: inline-block;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 15px;
         padding-right: 50px;
         padding-left: 50px;
+
+        width: 236px;
+        height: 48px;
+    
+        background-color: $primaryBlack;
+    
+        border: 2px solid $primaryWhite;
+        border-radius: 25px;
 
         font-family: 'Montserrat';
         font-weight: 700;
@@ -316,6 +327,12 @@
 
         color: $accentColor;
         text-decoration: none;
+        @include light-lem-btn-hover;
+
+        &:hover,
+        &:focus {
+            @include hover-focus-button
+        }
     }
 
     &__list-button {
