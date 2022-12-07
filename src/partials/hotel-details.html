@@ -7,7 +7,7 @@
       Velit officia consequat duis enim velit mollit.
     </p>
     <!-- Slider main container -->
-    <div dir="rtl" class="details-swiper hotel-details__swiper">
+    <div dir="rtl" class="swiper swiper-hotel-details hotel-details__swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -55,7 +55,7 @@
     <div class="hotel-details__swiper-button-wrapper">
       <button
         type="button"
-        class="swiper-button-prev hotel-details__swiper-button"
+        class="swiper-hotel-details-button-prev hotel-details__swiper-button"
       >
         <svg class="hotel-details__icon" width="32px" height="32px">
           <use href="./images/sprite.svg#icon-arrow-right"></use>
@@ -63,7 +63,7 @@
       </button>
       <button
         type="button"
-        class="swiper-button-next hotel-details__swiper-button"
+        class="swiper-hotel-details-button-next hotel-details__swiper-button"
       >
         <svg class="hotel-details__icon" width="32px" height="32px">
           <use href="./images/sprite.svg#icon-arrow-left"></use>
@@ -71,10 +71,18 @@
       </button>
     </div>
     <div class="hotel-details__modal-button-wrapper">
-      <button class="hotel-details__modal-button" type="button" data-modal-room-open-1>
+      <button
+        class="hotel-details__modal-button"
+        type="button"
+        data-modal-room-open-1
+      >
         Забронювати номер
       </button>
-      <button class="hotel-details__modal-button" type="button" data-modal-price-1-open>
+      <button
+        class="hotel-details__modal-button"
+        type="button"
+        data-modal-price-1-open
+      >
         Переглянути ціни
       </button>
     </div>
