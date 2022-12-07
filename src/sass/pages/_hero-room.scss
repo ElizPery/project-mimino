@@ -45,6 +45,11 @@
     line-height: 1.14;
     letter-spacing: 0.05em;
     color: $primaryWhite;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+    }
 
     @include for-tablet-landscape-up {
       left: 47px;
@@ -70,6 +75,11 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primaryWhite;
+
+    @media screen and (max-width: 400px) {
+        font-size: 10px;
+        width: 300px;
+      }
 
     @include for-tablet-landscape-up {
       left: 47px;
@@ -200,6 +210,11 @@
     border: 2px solid $primaryWhite;
     border-radius: 25px;
     @include light-btn-hover;
+
+    @media screen and (max-width: 400px) {
+        font-size: 11px;
+        width: 190px;
+      }
 
     @include for-tablet-landscape-up {
       left: 745px;

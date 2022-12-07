@@ -58,6 +58,10 @@
             margin-bottom: 16px;
         }
 
+        @media screen and (max-width: 400px) {
+            font-size: 25px;
+        }
+
     }
 
     &__discription {
@@ -71,6 +75,10 @@
             line-height: 1.21;
             width: 400px;
 
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 13px;
         }
 
     }
@@ -90,6 +98,9 @@
 
         }
 
+        @media screen and (max-width: 400px) {
+            font-size: 20px;
+        }
     }
 
     &__box-second {

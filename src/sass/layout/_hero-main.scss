@@ -103,6 +103,7 @@
 
         @media screen and (max-width: 400px) {
             font-size: 76px;
+            margin-top: 0;
         }
 
         @include for-tablet-landscape-up {
@@ -145,6 +146,11 @@
 
         @media screen and (max-width: 400px) {
             font-size: 27px;
+            margin-bottom: 70px;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 412px) {
+            margin-bottom: 70px;
         }
 
     }

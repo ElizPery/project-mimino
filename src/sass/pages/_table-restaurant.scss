@@ -42,6 +42,10 @@ td {
     line-height: 1.16;
     color: $primaryBlack;
 
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
+
     @include for-tablet-landscape-up {
       margin-bottom: 40px;
     }
@@ -91,6 +95,11 @@ td {
     line-height: 1.21;
     padding-bottom: 4px;
 
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+      margin-top: 0;
+    }
+
     @include for-desktop-up {
       font-size: 16px;
       line-height: 1.25;
@@ -104,6 +113,10 @@ td {
     text-align: right;
 
     line-height: 1.21;
+
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+    }
   }
 
   &__price-food {
@@ -116,6 +129,10 @@ td {
     @include for-desktop-up {
       font-size: 16px;
     }
+
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+    }
   }
 
   &__composition-food {
@@ -123,6 +140,10 @@ td {
 
     font-size: 10px;
     line-height: 1.2;
+
+    @media screen and (max-width: 400px) {
+      font-size: 8px;
+    }
 
     @include for-desktop-up {
       padding-bottom: 12px;
@@ -142,6 +163,10 @@ td {
   font-size: 20px;
   line-height: 1.15;
   text-align: left;
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 
   @include for-tablet-landscape-up {
     margin-bottom: 20px;
