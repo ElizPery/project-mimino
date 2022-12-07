@@ -304,7 +304,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
     border-radius: 25px;
-    border: 2px solid #ffffff;
+    border: 2px solid $primaryWhite;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
@@ -312,5 +312,7 @@
     letter-spacing: 0.02em;
     color: $accentColor;
     background: rgba(0, 0, 0, 0.4);
+
+    @include light-btn-hover;
   }
 }
