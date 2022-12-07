@@ -1,9 +1,12 @@
 .contacts-page {
     position: relative;
     background-color: $bgrColorLemon;
-    width: 414px;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-tablet-portrait-up {
+        width: 414px;
+    }
 
     @include for-tablet-landscape-up {
         width: 1024px;
@@ -114,6 +117,11 @@
         letter-spacing: 0.02em;
         color: $brownColor;
 
+        @include for-phone-only {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
         @include for-tablet-landscape-up {
             margin-right: 0;
         }
@@ -129,6 +137,10 @@
         letter-spacing: 0.02em;
         color: $brownColor;
 
+        @include for-phone-only {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
 
         @include for-tablet-landscape-up {
             margin-right: 0;

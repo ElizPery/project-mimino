@@ -136,9 +136,12 @@
 }
 
 .room-short-desc {
-    width: 414px;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-tablet-portrait-up {
+        width: 414px;
+    }
 
     @include for-tablet-landscape-up {
         width: 1024px;
@@ -378,11 +381,22 @@
             width: 550px;
         }
 
+        @include for-phone-only {
+            max-width: 290px;
+        }
+
         &-left {
             margin-left: 100px;
+            @include for-phone-only {
+                margin-right: auto;
+            }
+            
         }
 
         &-right {
+            @include for-phone-only {
+                margin-right: auto;
+            }
             margin-right: 100px;
         }
     }
@@ -414,6 +428,10 @@
         @include drop-shadow;
         margin-bottom: 12px;
         width: 194px;
+
+        @include for-phone-only {
+            max-width: 194px;
+        }
 
         @include for-tablet-portrait-up {
             width: 194px;
