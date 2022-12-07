@@ -99,6 +99,11 @@
         margin-left: auto;
         margin-right: auto;
         width: 303px;
+        display: inline-block;
+
+        @media screen and (max-width: 400px) {
+            font-size: 76px;
+        }
 
         @include for-tablet-landscape-up {
             padding-top: 188px;
@@ -136,6 +141,10 @@
 
         @include for-tablet-landscape-up {
             margin-bottom: 174px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 27px;
         }
 
     }
