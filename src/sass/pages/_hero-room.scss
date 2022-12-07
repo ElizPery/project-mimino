@@ -103,6 +103,7 @@
     z-index: 3;
     color: rgba(243, 198, 83, 0.7);
     text-decoration: none;
+    @include light-icon-hover;
 
     @include for-desktop-up {
       @include visually-hidden;
@@ -152,6 +153,24 @@
     padding: 5px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+    transition: fill 250ms linear,
+      border 250ms linear,
+      color 250ms linear;
+  
+    &:hover .hero-room__address-icon,
+    &:focus .hero-room__address-icon {
+      fill: $primaryWhite;
+    }
+  
+    &:hover,
+    &:focus {
+      border: 1px solid $primaryWhite;
+    }
+  
+    &:hover .hero-room__address-link,
+    &:focus .hero-room__address-link {
+      color: $accentColor;
+    }
 
     @include for-tablet-landscape-up {
       left: 47px;

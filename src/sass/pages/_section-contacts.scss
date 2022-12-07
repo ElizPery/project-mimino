@@ -178,6 +178,11 @@
         @media (max-width:414px) {
             flex-wrap: wrap;
         }
+
+        &:hover .contacts-page__tel,
+        &:focus .contacts-page__tel {
+            color: $accentColor;
+        }
     }
 
     &__map {
@@ -262,6 +267,11 @@
             width: 285px;
             margin-left: 0;
             margin-right: auto;
+        }
+
+        &:hover .contacts-page__address-link,
+        &:focus .contacts-page__address-link {
+            color: $accentColor;
         }
     }
 

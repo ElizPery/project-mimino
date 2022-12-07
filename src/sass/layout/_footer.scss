@@ -93,6 +93,12 @@
         align-items: center;
         color: rgba(243, 198, 83, 0.7);
         @include dark-text-hover;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $primaryWhite;
+            color: $primaryWhite;
+        }
     }
 
     &__icon {
@@ -112,6 +118,22 @@
         justify-content: center;
         align-items: center;
         gap: 15px;
+
+        transition: fill 250ms linear,
+        border 250ms linear,
+        color 250ms linear;
+    
+        &:hover .footer__icon,
+        &:focus .footer__icon {
+            fill: $primaryWhite;
+        }
+    
+        &:hover,
+        &:focus {
+            border: 1px solid $primaryWhite;
+            color: $primaryWhite;
+        }
+        
 
         &:first-child {
             gap: 17px;

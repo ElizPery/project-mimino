@@ -32,6 +32,22 @@
         align-items: center;
 
         list-style: none;
+        transition: fill 250ms linear, border 250ms linear, color 250ms linear;
+
+        &:hover .header__icon,
+        &:focus .header__icon {
+            fill: $primaryWhite;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $primaryWhite;
+        }
+
+        &:hover .header__phone,
+        &:focus .header__phone {
+            color: $accentColor;
+        }
 
     }
 
@@ -183,6 +199,6 @@
 
 .social__link {
     color: rgba(243, 198, 83, 0.7);
-    @include dark-text-hover;
+    @include light-icon-hover;
 }
 

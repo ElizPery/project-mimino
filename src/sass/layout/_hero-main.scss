@@ -53,6 +53,25 @@
             bottom: 64px;
             left: 15px;
         }
+
+        transition: fill 250ms linear,
+        border 250ms linear,
+        color 250ms linear;
+
+        &:hover .hero__icon,
+        &:focus .hero__icon {
+            fill: $primaryWhite;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $primaryWhite;
+        }
+
+        &:hover .hero__link,
+        &:focus .hero__link {
+            color: $accentColor;
+        }
     }
 
     &__icon {
@@ -209,8 +228,13 @@
         display: none;
     }
 
+    &__link {
+        color: rgba(243, 198, 83, 0.7);
+        @include light-icon-hover;
+    }
+
     &__icon {
-        fill: rgba(243, 198, 83, 0.7);
+        fill: currentColor;
     }
 
     &__menu {
