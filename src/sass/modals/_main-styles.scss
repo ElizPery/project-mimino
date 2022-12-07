@@ -9,6 +9,24 @@
     z-index: 999;
     background-color: rgba(14, 15, 18, 0.4);
 
+    &.is-hidden {
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+
+        & .modal {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+
+        & .modal-price {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+
+        & .modal-room {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+    }
+
     @media screen and (max-width: 1023px) {
         overflow-y: scroll;
     }
@@ -18,7 +36,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1000;
 
     max-width: 414px;
@@ -34,6 +51,7 @@
     overflow: hidden;
 
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms linear;
 }
 
 .is-hidden {
