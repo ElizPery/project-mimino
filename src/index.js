@@ -14,6 +14,13 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const swiperHero = new Swiper('.swiper-hero', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 const detailsSwiper = new Swiper('.details-swiper', {
   loop: true,
   slidesPerView: 'auto',
