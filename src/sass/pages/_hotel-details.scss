@@ -133,8 +133,10 @@
   }
 
   &__subtitle {
-    margin-left: 125px;
+    margin-right: 125px;
+    text-align: right;
     margin-bottom: 12px;
+    transform: translateX(12px);
 
     font-family: 'Film P3';
     font-weight: 700;
@@ -144,20 +146,21 @@
     color: $primaryWhite;
 
     @include for-tablet-landscape-up {
-      margin-left: 231px;
+      margin-right: 231px;
       margin-bottom: 16px;
+      transform: translateX(19px);
       font-size: 64px;
     }
 
     @include for-desktop-up {
-      margin-left: 253px;
+      margin-right: 253px;
     }
   }
 
   &__title {
     margin-bottom: 20px;
-    margin-left: 125px;
-
+    margin-right: 125px;
+    text-align: right;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
@@ -166,22 +169,22 @@
     color: $primaryWhite;
 
     @include for-tablet-landscape-up {
-      margin-left: 231px;
+      margin-right: 231px;
       margin-bottom: 8px;
       font-size: 24px;
     }
 
     @include for-desktop-up {
-      margin-left: 253px;
+      margin-right: 253px;
     }
   }
 
   &__text {
-    max-width: 259px;
+    max-width: 243px;
     max-height: 62px;
     margin-bottom: 48px;
-    margin-left: 125px;
-
+    margin-right: 124px;
+    margin-left: 17px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -191,34 +194,38 @@
     color: $sixthTextColor;
 
     @include for-tablet-landscape-up {
-      max-width: 610px;
+      max-width: 549px;
       max-height: 44px;
       margin-bottom: 40px;
-      margin-left: 231px;
+      margin-right: 231px;
+      margin-left: 150px;
       font-size: 16px;
     }
 
     @include for-desktop-up {
-      margin-left: 253px;
+      max-width: 595px;
+      margin-right: 253px;
+      margin-left: 262px;
     }
   }
 
   &__swiper {
     width: 370px;
     height: 270px;
-    margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 16px;
     overflow: hidden;
 
     @include for-tablet-landscape-up {
       width: 662px;
       margin-bottom: 24px;
-      margin-left: 265px;
+      margin-right: 265px;
     }
 
     @include for-desktop-up {
       width: 875px;
-      margin-left: 269px;
+      margin-right: 269px;
+      transform: translateX(-33px);
     }
   }
 
@@ -239,17 +246,18 @@
 
   &__swiper-button-wrapper {
     display: flex;
+    flex-direction: row-reverse;
     gap: 30px;
     margin-bottom: 32px;
-    margin-left: 25px;
+    margin-right: 25px;
 
     @include for-tablet-landscape-up {
       margin-bottom: 0;
-      margin-left: 265px;
+      margin-right: 265px;
     }
 
     @include for-desktop-up {
-      margin-left: 269px;
+      margin-right: 269px;
     }
   }
 
@@ -280,11 +288,11 @@
     @include for-tablet-landscape-up {
       position: absolute;
       bottom: 96px;
-      left: 47px;
+      right: 47px;
     }
 
     @include for-desktop-up {
-      left: 85px;
+      right: 85px;
     }
   }
 
@@ -302,8 +310,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #f3c653;
-    // $accentColor
+    color: $accentColor;
     background: rgba(0, 0, 0, 0.4);
   }
 }
