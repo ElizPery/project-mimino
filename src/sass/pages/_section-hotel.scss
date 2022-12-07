@@ -84,6 +84,10 @@
         margin-left: auto;
         margin-bottom: 32px;
 
+        @include for-phone-only {
+            width: 244px;
+        }
+
         @include for-tablet-landscape-up {
             position: absolute;
             top: -32px;
@@ -102,6 +106,10 @@
         @include img;
         margin-right: auto;
         margin-bottom: 32px;
+
+        @include for-phone-only {
+            max-width: 244px;
+        }
 
         @include for-tablet-landscape-up {
             position: absolute;
@@ -498,6 +506,10 @@
     margin-top: 20px;
     margin-left: 70px;
     margin-right: auto;
+
+    @include for-phone-only {
+        margin-left: 27px;
+    }
 
     @include for-tablet-portrait-up {
         margin-top: 20px;
