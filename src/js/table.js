@@ -1,8 +1,8 @@
 const refsTable = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    openModalBtn1: document.querySelector('[data-modal-open-1]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('[data-modal-table-open]'),
+    openModalBtn1: document.querySelector('[data-modal-table-open-1]'),
+    closeModalBtn: document.querySelector('[data-modal-table-close]'),
+    modal: document.querySelector('[data-modal-table]'),
 };
 function toggleModalTable() {
     refsTable.modal.classList.toggle('is-hidden');
